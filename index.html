@@ -5,12 +5,15 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-<!-- Шапка сайта -->
+
     <header class="header">
 		<img src="" alt="Логотип Device" class="header-logo">
 		<section class="header-useful">
 			<input type="search">
-			<div class="login">Войти</div>
+			<ul class="login">
+				<li>Войти</li>
+				<li>Выйти</li>
+			</ul>
 			<button class="compare">Сравнить</button>
 			<a href="#" class="basket">Корзина</a>
 		</section>
@@ -21,13 +24,24 @@
 			<li>Контакты</li>
 		</nav>
     </header>
-<!-- Основное содержимое страницы -->
-    <main>
+
+	<main>
 		<h1 class="visually-hidden">Интернет-магазин электроники "Device"</h1>
 <!-- Слайдер -->
-    	<section class="main-slider">
-			
-		</section>
+    	<article class="main-slider">
+			<img src="#" alt="">
+			<h1>Порхает как бабочка, жалит как пчела!</h1>
+			<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+			</p>
+			<a href="#">Подробнее</a>
+			<dl class="slide-spec">
+				<dt>800 м</dt>
+				<dd>Дальность полета</dd>
+
+				<dt>50 м</dt>
+				<dd>Радиус поражения</dd>
+			</dl>
+		</article>
 <!-- Список категорий -->
 		<section class="category">
 			<h2 class="visually-hidden">Категории товаров</h2>
@@ -87,13 +101,13 @@
 				Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
 			</p>
 			<form action="">
-				<input type="text">
+				<input type="email">
 				<button type="submit">Подписаться</button>
 			</form>
 			<span class="subscription-notice">Это бесплатно</span>
 		</section>
     </main>
-<!-- Подвал сайта -->
+
     <footer class="main-footer">
 		<img src="" alt="Логотип Device">
 		<p class="footer-address">Санкт-Петербург, набережная
