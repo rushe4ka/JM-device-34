@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+<!-- Шапка сайта -->
+    <header class="header">
+		<img src="" alt="Логотип Device" class="header-logo">
+		<section class="header-useful">
+			<input type="search">
+			<div class="login">Войти</div>
+			<button class="compare">Сравнить</button>
+			<a href="#" class="basket">Корзина</a>
+		</section>
+		<nav class="main-navigation">
+			<li><a href="catalog.html" class="catalog"></a>Каталог товаров</a></li>
+			<li>Доставка</li>
+			<li>Гарантия</li>
+			<li>Контакты</li>
+		</nav>
+    </header>
+<!-- Основное содержимое страницы -->
+    <main>
+<!-- Заголовок раздела -->
+		<h1 class="catalog-name">Моноподы для селфи</h1>
+		<div class="breadcrumbs"></div>
+		<section class="catalog-filter">
+			<form action="">
+				<h2>Фильтр:</h2>
+				<label for="price">Стоимость</label>
+				<input type="range" id="price" min="0" max="5000">
+				<label for="color">Цвет</label>
+				<input type="checkbox" id="color">
+				<label for="bluetooth">Bluetooth</label>
+				<input type="radio" id="bluetooth">
+				<button type="submit">Показать</button>
+			</form>
+		</section>
+		<section class="catalog-list">
+			<form action="">
+				<h2>Сортировка:</h2>
+				<input type="selection">
+				<span class="filter-updown"></span>
+			</form>
+			<article class="catalog-item">
+				<img src="#" alt="">
+				<span class="item-desc">Любительская селфи-палка</span>
+				<span class="item-price">500 &#8381;</span>
+			</article>
+			<article class="catalog-item">
+				<img src="#" alt="">
+				<span class="item-desc">Профессиональная селфи-палка</span>
+				<span class="item-price">1 500 &#8381;</span>
+			</article>
+			<article class="catalog-item">
+				<img src="#" alt="">
+				<span class="item-desc">Непотопляемая селфи-палка</span>
+				<span class="item-price">2 500 &#8381;</span>
+			</article>
+			<article class="catalog-item">
+				<img src="#" alt="">
+				<span class="item-desc">Селфи-палка «Следуй за мной»</span>
+				<span class="item-price">1 500 &#8381;</span>
+			</article>
+		</section>
+		<button class="catalog-more">Загрузить ещё</button>
+    	<div class="paginator"></div>
+    </main>
+<!-- Подвал сайта -->
+    <footer class="main-footer">
+		<img src="" alt="Логотип Device">
+		<p class="footer-address">Санкт-Петербург, набережная
+			реки Карповки, 5, литера П.</p>
+		<ul class="footer-nav">
+			<li>Доставка</li>
+			<li>Гарантия</li>
+			<li>Контакты</li>
+		</ul>
+		<a href="" class="footer-tel">Тел.: +7 (812) 812-12-12</a>
+		<p class="footer-decoration"></p>
+		<ul class="footer-social">
+			<li>Telegram</li>
+			<li>Youtube</li>
+			<li>Twitter</li>
+		</ul>
+		<div class="footer-developer">html academy</div>
+    </footer>
+  </body>
+</html>
