@@ -10,7 +10,10 @@
 		<img src="" alt="Логотип Device" class="header-logo">
 		<section class="header-useful">
 			<input type="search">
-			<div class="login">Войти</div>
+			<ul class="login">
+				<li>Коля Петухов</li>
+				<li>Выйти</li>
+			</ul>
 			<button class="compare">Сравнить</button>
 			<a href="#" class="basket">Корзина</a>
 		</section>
@@ -21,14 +24,15 @@
 			<li>Контакты</li>
 		</nav>
     </header>
-<!-- Основное содержимое страницы -->
+
     <main>
 <!-- Заголовок раздела -->
 		<h1 class="catalog-name">Моноподы для селфи</h1>
 		<div class="breadcrumbs"></div>
+<!-- Фильтр каталога -->
 		<section class="catalog-filter">
+			<h2>Фильтр:</h2>
 			<form action="">
-				<h2>Фильтр:</h2>
 				<label for="price">Стоимость</label>
 				<input type="range" id="price" min="0" max="5000">
 				<label for="color">Цвет</label>
@@ -38,37 +42,42 @@
 				<button type="submit">Показать</button>
 			</form>
 		</section>
+<!-- Список позиций каталога -->
 		<section class="catalog-list">
+			<h2>Сортировка:</h2>
 			<form action="">
-				<h2>Сортировка:</h2>
 				<input type="selection">
 				<span class="filter-updown"></span>
 			</form>
-			<article class="catalog-item">
+			<figure class="catalog-item">
 				<img src="#" alt="">
-				<span class="item-desc">Любительская селфи-палка</span>
-				<span class="item-price">500 &#8381;</span>
-			</article>
-			<article class="catalog-item">
+				<figcaption>
+					Любительская селфи-палка <span class="item-price">500 &#8381;</span>
+				</figcaption>
+			</figure>
+			<figure class="catalog-item">
 				<img src="#" alt="">
-				<span class="item-desc">Профессиональная селфи-палка</span>
-				<span class="item-price">1 500 &#8381;</span>
-			</article>
-			<article class="catalog-item">
+				<figcaption>
+					Профессиональная селфи-палка <span class="item-price">1 500 &#8381;</span>
+				</figcaption>
+			</figure>
+			<figure class="catalog-item">
 				<img src="#" alt="">
-				<span class="item-desc">Непотопляемая селфи-палка</span>
-				<span class="item-price">2 500 &#8381;</span>
-			</article>
-			<article class="catalog-item">
+				<figcaption>
+					Непотопляемая селфи-палка <span class="item-price">2 500 &#8381;</span>
+				</figcaption>
+			</figure>
+			<figure class="catalog-item">
 				<img src="#" alt="">
-				<span class="item-desc">Селфи-палка «Следуй за мной»</span>
-				<span class="item-price">1 500 &#8381;</span>
-			</article>
+				<figcaption>
+					Селфи-палка «Следуй за мной» <span class="item-price">1 500 &#8381;</span>
+				</figcaption>
+			</figure>
 		</section>
 		<button class="catalog-more">Загрузить ещё</button>
     	<div class="paginator"></div>
     </main>
-<!-- Подвал сайта -->
+
     <footer class="main-footer">
 		<img src="" alt="Логотип Device">
 		<p class="footer-address">Санкт-Петербург, набережная
