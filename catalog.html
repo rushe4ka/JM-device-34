@@ -9,7 +9,9 @@
     <header class="header">
 		<img src="" alt="Логотип Device" class="header-logo">
 		<section class="header-useful">
-			<input type="search">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<input type="search" placeholder="Текст поиска">
+			</form>
 			<ul class="login">
 				<li>Коля Петухов</li>
 				<li>Выйти</li>
@@ -32,21 +34,36 @@
 <!-- Фильтр каталога -->
 		<section class="catalog-filter">
 			<h2>Фильтр:</h2>
-			<form action="">
-				<label for="price">Стоимость</label>
-				<input type="range" id="price" min="0" max="5000">
-				<label for="color">Цвет</label>
-				<input type="checkbox" id="color">
-				<label for="bluetooth">Bluetooth</label>
-				<input type="radio" id="bluetooth">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				
+				<fieldset class="filter filter-price">
+					<legend>Фильтр:</legend>
+					<input type="range" id="price" name="price" min="0" max="9000" step="1" value="5000">
+				</fieldset>
+				<fieldset class="filter filter-color">
+					<legend>Цвет</legend>
+					<label><input type="checkbox" name="color" checked value="black">Черный</label>
+					<label><input type="checkbox" name="color" checked value="white">Белый</label>
+					<label><input type="checkbox" name="color" value="blue">Синий</label>
+					<label><input type="checkbox" name="color" value="red">Красный</label>
+					<label><input type="checkbox" name="color" value="rose">Розовый</label>
+				</fieldset>
+				<fieldset class="filter filter-bluetooth">
+					<legend>Bluetooth</legend>
+					<label><input type="radio" name="bluetooth-yes" checked value="bluetooth-yes">Есть</label>
+					<label><input type="radio" value="bluetooth-no" name="bluetooth-no">Нет</label>
+				</fieldset>
+
 				<button type="submit">Показать</button>
 			</form>
 		</section>
 <!-- Список позиций каталога -->
 		<section class="catalog-list">
 			<h2>Сортировка:</h2>
-			<form action="">
-				<input type="selection">
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<select>
+					<option value="popular" name="popular" selected>Популярные</option>
+				</select>
 				<span class="filter-updown"></span>
 			</form>
 			<figure class="catalog-item">
