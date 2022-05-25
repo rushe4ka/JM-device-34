@@ -39,9 +39,8 @@
 			</div>
 	<!-- Фильтр каталога -->
 			<section class="catalog-filter">
-				<h2>Фильтр:</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					
+					<span class="filter-name">Фильтр:</span>
 					<fieldset class="filter filter-price">
 						<legend>Стоимость</legend>
 						от 0 <input type="range" id="price" name="price" min="0" max="9000" step="1" value="5000"> до 5000
@@ -65,40 +64,36 @@
 			</section>
 	<!-- Список позиций каталога -->
 			<section class="catalog-list">
-				<h2>Сортировка:</h2>
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<select>
-						<option value="popular" name="popular" selected>Популярные</option>
-					</select>
+					<label>
+						<span class="filter-name">Сортировка:</span>
+						<select>
+							<option value="popular" name="popular" selected>Популярные</option>
+						</select>
+					</label>
 					<span class="filter-sort">
 						<button class="sort-up"></button>
 						<button class="sort-down"></button>
 					</span>
 				</form>
-				<figure class="catalog-item">
-					<img src="#" alt="" width="360" height="380">
-					<figcaption>
-						Любительская селфи-палка <span class="item-price">500 &#8381;</span>
-					</figcaption>
-				</figure>
-				<figure class="catalog-item">
-					<img src="#" alt="" width="360" height="380">
-					<figcaption>
-						Профессиональная селфи-палка <span class="item-price">1 500 &#8381;</span>
-					</figcaption>
-				</figure>
-				<figure class="catalog-item">
-					<img src="#" alt="" width="360" height="380">
-					<figcaption>
-						Непотопляемая селфи-палка <span class="item-price">2 500 &#8381;</span>
-					</figcaption>
-				</figure>
-				<figure class="catalog-item">
-					<img src="#" alt="" width="360" height="380">
-					<figcaption>
-						Селфи-палка «Следуй за мной» <span class="item-price">1 500 &#8381;</span>
-					</figcaption>
-				</figure>
+				<ul>
+					<li>
+						<a href="#"><img src="#" alt="" width="360" height="380"></a>
+						<a href="#">Любительская селфи-палка</a><span class="item-price">500 &#8381;</span>
+					</li>
+					<li>
+						<a href="#"><img src="#" alt="" width="360" height="380"></a>
+						<a href="#">Профессиональная селфи-палка</a><span class="item-price">1 500 &#8381;</span>
+					</li>
+					<li>
+						<a href="#"><img src="#" alt="" width="360" height="380"></a>
+						<a href="#">Непотопляемая селфи-палка</a><span class="item-price">2 500 &#8381;</span>
+					</li>
+					<li>
+						<a href="#"><img src="#" alt="" width="360" height="380"></a>
+						<a href="#">Селфи-палка «Следуй за мной»</a><span class="item-price">1 500 &#8381;</span>
+					</li>
+				</ul>
 			</section>
 			<button class="catalog-more">Загрузить ещё</button>
 			<div class="paginator"></div>
