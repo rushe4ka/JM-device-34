@@ -32,7 +32,11 @@
 		<main>
 	<!-- Заголовок раздела -->
 			<h1 class="catalog-name">Моноподы для селфи</h1>
-			<div class="breadcrumbs"></div>
+			<div class="breadcrumbs">
+				<a href="index.html" class="breadcrumbs-link"></a>
+				<a href="catalog.html" class="breadcrumbs-link"></a>
+				<a class="breadcrumbs-link breadcrumbs-link-active"></a>
+			</div>
 	<!-- Фильтр каталога -->
 			<section class="catalog-filter">
 				<h2>Фильтр:</h2>
@@ -66,7 +70,10 @@
 					<select>
 						<option value="popular" name="popular" selected>Популярные</option>
 					</select>
-					<span class="filter-updown"></span>
+					<span class="filter-sort">
+						<button class="sort-up"></button>
+						<button class="sort-down"></button>
+					</span>
 				</form>
 				<figure class="catalog-item">
 					<img src="#" alt="" width="360" height="380">
