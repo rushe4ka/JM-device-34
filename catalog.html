@@ -5,7 +5,7 @@
     	<title>HTML Academy: Девайс</title>
 	</head>
 	<body>
-	<!-- Шапка сайта -->
+
 		<header class="header">
 			<a href="index.html">
 				<img src="#" alt="Логотип Device." class="header-logo">
@@ -30,84 +30,126 @@
 		</header>
 
 		<main>
-	<!-- Заголовок раздела -->
-			<h1 class="catalog-name">Моноподы для селфи</h1>
-			<div class="breadcrumbs">
-				<a href="index.html" class="breadcrumbs-link"></a>
-				<a href="catalog.html" class="breadcrumbs-link"></a>
-				<a class="breadcrumbs-link breadcrumbs-link-active"></a>
-			</div>
-	<!-- Фильтр каталога -->
-			<section class="catalog-filter">
-				<form action="https://echo.htmlacademy.ru" method="get">
-					<span class="filter-name">Фильтр:</span>
-					<fieldset class="filter filter-price">
-						<legend>Стоимость</legend>
-						от 0 <input type="range" id="price" name="price" min="0" max="9000" step="1" value="5000"> до 5000
-					</fieldset>
-					<fieldset class="filter filter-color">
-						<legend>Цвет</legend>
-						<label><input type="checkbox" name="color" value="black" checked>Черный</label>
-						<label><input type="checkbox" name="color" value="white" checked>Белый</label>
-						<label><input type="checkbox" name="color" value="blue">Синий</label>
-						<label><input type="checkbox" name="color" value="red">Красный</label>
-						<label><input type="checkbox" name="color" value="rose">Розовый</label>
-					</fieldset>
-					<fieldset class="filter filter-bluetooth">
-						<legend>Bluetooth</legend>
-						<label><input type="radio" name="bluetooth" value="bluetooth-yes" checked>Есть</label>
-						<label><input type="radio" name="bluetooth" value="bluetooth-no">Нет</label>
-					</fieldset>
 
-					<button type="submit" class="button">Показать</button>
-				</form>
-			</section>
-	<!-- Список позиций каталога -->
-			<section class="catalog-list">
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<label>
-						<span class="filter-name">Сортировка:</span>
-						<select>
-							<option value="popular" name="popular" selected>Популярные</option>
-						</select>
-					</label>
-					<span class="filter-sort">
-						<button class="sort-up">
-							<span class="visually-hidden">По возрастанию</span>
-						</button>
-						<button class="sort-down">
-							<span class="visually-hidden">По убыванию</span>
-						</button>
-					</span>
-				</form>
-				<ul>
-					<li>
-						<a href="#"><img src="#" alt="Селфи-палка черного цвета раздвижная." width="360" height="380"></a>
-						<a href="#">Любительская селфи-палка</a><span class="item-price">500 &#8381;</span>
+			<header class="catalog-header">
+				<h1 class="catalog-name">Моноподы для селфи</h1>
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item">
+						<a href="index.html" class="breadcrumbs-link">Главная</a>
 					</li>
-					<li>
-						<a href="#"><img src="#" alt="Селфи-палка металлическая черного цвета." width="360" height="380"></a>
-						<a href="#">Профессиональная селфи-палка</a><span class="item-price">1 500 &#8381;</span>
+					<li class="breadcrumbs-item">
+						<a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
 					</li>
-					<li>
-						<a href="#"><img src="#" alt="Селфи-палка с желтой отделкой и шнурком." width="360" height="380"></a>
-						<a href="#">Непотопляемая селфи-палка</a><span class="item-price">2 500 &#8381;</span>
-					</li>
-					<li>
-						<a href="#"><img src="#" alt="Селфи-палка в виде руки." width="360" height="380"></a>
-						<a href="#">Селфи-палка «Следуй за мной»</a><span class="item-price">1 500 &#8381;</span>
+					<li class="breadcrumbs-item">
+						<a class="breadcrumbs-link breadcrumbs-link-active">Моноподы для селфи</a>
 					</li>
 				</ul>
-			</section>
-			<button class="catalog-more">Загрузить ещё</button>
-			<div class="paginator-list">
-				<a href="#" class="paginator-active">Назад</a>
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">...</a>
-				<a href="#">15</a>
-				<a href="#" class="paginator-active">Вперёд</a>
+			</header>
+
+			<div class="catalog-wrap">
+
+				<section class="catalog-filter">
+					<h2 class="filter-name">Фильтр:</h2>
+					<form action="https://echo.htmlacademy.ru" method="get">
+						<fieldset class="filter filter-price">
+							<legend>Стоимость</legend>
+							от 0 <input type="range" id="price" name="price" min="0" max="9000" step="1" value="5000"> до 5000
+						</fieldset>
+						<fieldset class="filter filter-color">
+							<legend>Цвет</legend>
+							<label><input type="checkbox" name="black" checked>Черный</label>
+							<label><input type="checkbox" name="white" checked>Белый</label>
+							<label><input type="checkbox" name="blue">Синий</label>
+							<label><input type="checkbox" name="red">Красный</label>
+							<label><input type="checkbox" name="rose">Розовый</label>
+						</fieldset>
+						<fieldset class="filter filter-bluetooth">
+							<legend>Bluetooth</legend>
+							<label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
+							<label><input type="radio" name="bluetooth" value="no">Нет</label>
+						</fieldset>
+						<button type="submit" class="button">Показать</button>
+					</form>
+				</section>
+
+				<section class="catalog-sort">					
+					<h2 class="filter-name">Сортировка:</h2>
+					<select class="select-control" aria-label="Сортировка">
+						<option value="popular" selected>Популярные</option>
+						<option value="cheap">Дешевые</option>
+						<option value="expensive">Дорогие</option>
+					</select>
+					<div class="select-sort">
+						<a href="#" class="sort-up">
+							<span class="visually-hidden">По возрастанию</span>
+						</a>
+						<a href="#" class="sort-down">
+							<span class="visually-hidden">По убыванию</span>
+						</a>
+					</div>
+				</section>
+
+				<section class="catalog-view">
+					<ul class="catalog-list">
+						<li class="catalog-item">
+							<a href="#">
+								<img src="#" alt="Селфи-палка черного цвета раздвижная." width="360" height="380">
+								<span class="item-name">Любительская селфи-палка</span>
+								<span class="item-price">500 &#8381;</span>
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="#">
+								<img src="#" alt="Селфи-палка металлическая черного цвета." width="360" height="380">
+								<span class="item-name">Профессиональная селфи-палка</span>
+								<span class="item-price">1 500 &#8381;</span>
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="#">
+								<img src="#" alt="Селфи-палка с желтой отделкой и шнурком." width="360" height="380">
+								<span class="item-name">Непотопляемая селфи-палка</span>
+								<span class="item-price">2 500 &#8381;</span>
+							</a>
+						</li>
+						<li class="catalog-item">
+							<a href="#">
+								<img src="#" alt="Селфи-палка в виде руки." width="360" height="380">
+								<span class="item-name">Селфи-палка «Следуй за мной»</span>
+								<span class="item-price">1 500 &#8381;</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="catalog-paginator">
+					<h2 class="visually-hidden">Список страниц каталога</h2>
+					<button type="button" class="catalog-more">Загрузить ещё</button>
+					<ol class="catalog-paginator-list">
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link catalog-paginator-link-prev">Назад</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link">1</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link">2</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link">3</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link">...</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link">15</a>
+						</li>
+						<li class="catalog-paginator-list-item">
+							<a href="#" class="catalog-paginator-link catalog-paginator-link-next">Вперёд</a>
+						</li>
+					</ol>
+				</section>
+				
 			</div>
 		</main>
 
