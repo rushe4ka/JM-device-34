@@ -17,22 +17,24 @@
 					<button>Войти</button>
 					<button>Выйти</button>
 				</div>
-				<a href="#" class="compare">Сравнить</а>
+				<a href="#" class="compare">Сравнить</a>
 				<a href="#" class="basket">Корзина</a>
 			</section>
 			<nav class="main-navigation">
-				<li>
-					<a href="catalog.html" class="catalog"></a>Каталог товаров</a>
-				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
+				<ul>
+					<li>
+						<a href="catalog.html" class="catalog">Каталог товаров</a>
+					</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 			</nav>
 		</header>
 
 		<main>
 			<h1 class="visually-hidden">Интернет-магазин электроники "Device"</h1>
-<!-- Слайдер -->
+
 			<section>
 				<ol class="main-slider">
 					<li>
@@ -83,13 +85,22 @@
 						<span class="visually-hidden">Следующий слайд</span>
 					</button>
 				</div>
-				<div class="slider-dots">
-					<input type="radio" name="slider1" class="slider-dots-dot">
-					<input type="radio" name="slider1" class="slider-dots-dot">
-					<input type="radio" name="slider1" class="slider-dots-dot" checked>
-				</div>
+				<ol class="slider-paginator">
+					<li class="slider-paginator-item">
+						<button class="slider-paginator-dot slider-paginator-dot-checked"></button>
+						<span class="visually-hidden">Первый слайд</span>
+					</li>
+					<li class="slider-paginator-item">
+						<button class="slider-paginator-dot"></button>
+						<span class="visually-hidden">Второй слайд</span>
+					</li>
+					<li class="slider-paginator-item">
+						<button class="slider-paginator-dot"></button>
+						<span class="visually-hidden">Третий слайд</span>
+					</li>
+				</ol>
 			</section>
-<!-- Список категорий -->
+
 			<section class="category">
 				<h2 class="visually-hidden">Категории товаров</h2>
 				<ul class="category-list">
@@ -101,7 +112,7 @@
 					<li><a href="#" class="category-item">Квадрокоптеры</a></li>
 				</ul>
 			</section>
-<!-- Услуги -->
+
 			<section class="services">
 				<h2 class="visually-hidden">Наши сервисы</h2>
 				<ol class="services-slider">
@@ -131,10 +142,11 @@
 				</ol>
 
 			</section>
-<!-- Контакты -->
+
 			<section class="delivery">
 				<div class="delivery-banner">Доставим редкий товар под заказ</div>
 			</section>
+
 			<div class="about">
 				<section class="about-us">
 					<h2>О нас</h2>
@@ -159,8 +171,8 @@
 					</p>
 					<a href="#" class="button contacts-link">Напишите нам</a>
 				</section>
-			</d>
-<!-- Подписка -->
+			</div>
+
 			<section class="subscription">
 				<h2 class="subscription-appeal">
 					Подпишитесь на рассылку
