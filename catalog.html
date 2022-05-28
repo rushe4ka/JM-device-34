@@ -7,27 +7,34 @@
 	<body>
 
 		<header class="header">
-			<a href="index.html">
-				<img src="#" alt="Логотип Device." class="header-logo">
-			</a>
+			<a href="#"><img class="header-logo" src="#" alt="Логотип Device"></a>
 			<section class="header-useful">
 				<h2 class="visual-hidden">Пользовательское меню сайта</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<input type="search" placeholder="Текст поиска">
+					<button type="submit">Найти</button>
 				</form>
 				<div class="login">
-					<button>Коля Петухов</button>
+					<button>Войти</button>
 					<button>Выйти</button>
 				</div>
-				<a href="#" class="compare">Сравнить</a>
-				<a href="#" class="basket">Корзина</a>
+				<a class="compare" href="#">Сравнить</a>
+				<a class="basket" href="#">Корзина</a>
 			</section>
 			<nav class="main-navigation">
 				<ul>
-					<li><a href="catalog.html" class="catalog">Каталог товаров</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li>
+						<a class="catalog" href="catalog.html">Каталог товаров</a>
+					</li>
+					<li>
+						<a href="#">Доставка</a>
+					</li>
+					<li>
+						<a href="#">Гарантия</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -38,10 +45,10 @@
 				<h1 class="catalog-name">Моноподы для селфи</h1>
 				<ul class="breadcrumbs">
 					<li class="breadcrumbs-item">
-						<a href="index.html" class="breadcrumbs-link">Главная</a>
+						<a class="breadcrumbs-link" href="index.html">Главная</a>
 					</li>
 					<li class="breadcrumbs-item">
-						<a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
+						<a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
 					</li>
 					<li class="breadcrumbs-item">
 						<a class="breadcrumbs-link breadcrumbs-link-active">Моноподы для селфи</a>
@@ -71,7 +78,7 @@
 							<label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
 							<label><input type="radio" name="bluetooth" value="no">Нет</label>
 						</fieldset>
-						<button type="submit" class="button">Показать</button>
+						<button class="button" type="submit">Показать</button>
 					</form>
 				</section>
 
@@ -84,12 +91,8 @@
 							<option value="expensive">Дорогие</option>
 						</select>
 						<div class="select-sort">
-							<a href="#" class="sort-up">
-								<span class="visually-hidden">По возрастанию</span>
-							</a>
-							<a href="#" class="sort-down">
-								<span class="visually-hidden">По убыванию</span>
-							</a>
+							<a class="sort-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+							<a class="sort-down" href="#"><span class="visually-hidden">По убыванию</span></a>
 						</div>
 					</div>
 
@@ -125,28 +128,28 @@
 					</ul>
 
 					<div class="catalog-paginator">
-						<button type="button" class="catalog-more">Загрузить ещё</button>
+						<button class="catalog-more" type="button">Загрузить ещё</button>
 						<ol class="catalog-paginator-list">
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link catalog-paginator-link-prev">Назад</a>
+								<a class="catalog-paginator-link catalog-paginator-link-prev" href="#">Назад</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link">1</a>
+								<a class="catalog-paginator-link" href="#">1</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link">2</a>
+								<a class="catalog-paginator-link" href="#">2</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link">3</a>
+								<a class="catalog-paginator-link" href="#">3</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link">...</a>
+								<a class="catalog-paginator-link" href="#">...</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link">15</a>
+								<a class="catalog-paginator-link" href="#">15</a>
 							</li>
 							<li class="catalog-paginator-list-item">
-								<a href="#" class="catalog-paginator-link catalog-paginator-link-next">Вперёд</a>
+								<a class="catalog-paginator-link catalog-paginator-link-next" href="#">Вперёд</a>
 							</li>
 						</ol>
 					</div>
@@ -159,11 +162,17 @@
 			<a href="#"><img src="#" alt="Логотип Device."></a>
 			<address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
 			<ul class="footer-nav">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li>
+					<a href="#">Доставка</a>
+				</li>
+				<li>
+					<a href="#">Гарантия</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
 			</ul>
-			<a href="tel:+7(812)8121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a>
+			<a class="footer-tel" href="tel:+7(812)8121212">Тел.: +7 (812) 812-12-12</a>
 			<p class="footer-decoration"></p>
 			<ul class="footer-social">
 				<li>
@@ -176,7 +185,7 @@
 					<a href="https://twitter.com/htmlacademy_ru" target="_blank"><span class="visually-hidden">Twitter</span></a>
 				</li>
 			</ul>
-			<a href="https://htmlacademy.ru" class="footer-developer">html academy</a>
+			<a class="footer-developer" href="https://htmlacademy.ru">html academy</a>
 		</footer>
 	</body>
 </html>
