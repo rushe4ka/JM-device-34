@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
@@ -30,12 +30,20 @@ body {
   color: #000000;
 }
 
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .header {
   background: #FFE17F;
 }
 
-.main-navigation {
+.navigation-link {
   font-family: "Railway", "Arial", sans-serif;
   font-size: 18px;
+  font-weight: 800;
   line-height: 21px;
+  color:#000000;
+  text-transform: uppercase;
 }
