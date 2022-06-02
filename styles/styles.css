@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/raleway-800.woff2") format("woff2");
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/rubik-400.woff2") format("woff2");
+  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/rubik-700.woff2") format("woff2");
+  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,4 +26,16 @@ body {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.header {
+  background: #FFE17F;
+}
+
+.main-navigation {
+  font-family: "Railway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
 }
