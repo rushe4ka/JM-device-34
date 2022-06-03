@@ -46,6 +46,7 @@ body {
   background: #FFE17F;
 }
 
+
 /* Slider */
 
 .section-title {
@@ -55,9 +56,14 @@ body {
   line-height: 50px;
 }
 
+.slide-text {
+  color: #444444;
+}
+
 .slide-spec-termin {
   font-size: 16px;
   line-height: 30px;
+  color: #444444;
 }
 
 .slide-spec-definition {
@@ -83,40 +89,63 @@ body {
   background-color: #F0F0F0;
 }
 
+.service-text {
+  color: #444444;
+}
+
 .delivery-banner {
   background-color:#F0F0F0;
+}
+
+.about-contacts h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #444444;
+}
+
+.about-text {
+  color: #444444;
+  font-style: normal;
+}
+
+.about-tel {
+  text-decoration: none;
+  color: #444444;
 }
 
 .subscription {
   background-color:#F0F0F0;
 }
 
+.subscription-description {
+  color: #444444;
+}
+
+.subscription-notice {
+  color: #444444;
+}
+
 /* Footer */
 
 .main-footer {
   background-color: #444444;
+  color: #FFFFFF;
+}
+
+.main-footer a {
+  color: #FFFFFF;
 }
 
 .footer-address {
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
   font-style: normal;
-}
-
-.footer-nav-link {
-  color: #FFFFFF;
 }
 
 .footer-tel {
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
-}
-
-.social-link {
-  color: #FFFFFF;
 }
 
 /* Catalog */
@@ -167,6 +196,11 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+
+.item-price {
+  line-height: 21px;
+  color: #444444;
 }
 
 .catalog-more {
