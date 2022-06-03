@@ -32,20 +32,45 @@ body {
 
 .link {
   text-decoration: none;
-  color: #000000;
-}
-
-.header {
-  background: #FFE17F;
-}
-
-.navigation-link {
   font-family: "Railway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   color:#000000;
   text-transform: uppercase;
+}
+
+/* Header */
+
+.header {
+  background: #FFE17F;
+}
+
+/* Slider */
+
+.section-title {
+  font-family: "Railway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slide-spec-termin {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.slide-spec-definition {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+/* Main index */
+
+.category-item {
+  text-decoration: none;
+  color:#000000;
+  line-height: 24px;
 }
 
 .category-icon {
@@ -66,9 +91,35 @@ body {
   background-color:#F0F0F0;
 }
 
+/* Footer */
+
 .main-footer {
   background-color: #444444;
 }
+
+.footer-address {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+.footer-nav-link {
+  color: #FFFFFF;
+}
+
+.footer-tel {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.social-link {
+  color: #FFFFFF;
+}
+
+/* Catalog */
 
 .catalog-main {
   background-color: #F0F0F0;
@@ -80,4 +131,55 @@ body {
 
 .catalog-list {
   background-color: #FFFFFF;
+}
+
+.catalog-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.filter-name {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-family: "Railway", "Arial", sans-serif;
+}
+
+.filter legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.filter label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.item-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-more {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-family: "Railway", "Arial", sans-serif;
+  font-weight: 800;
+}
+
+.catalog-paginator-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
 }
