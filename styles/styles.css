@@ -36,6 +36,7 @@ body {
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
+  letter-spacing: 0.2em;
   color:#000000;
   text-transform: uppercase;
 }
@@ -44,6 +45,22 @@ body {
 
 .header {
   background: #FFE17F;
+}
+
+.header-button-search {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header-button {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* Slider */
@@ -75,7 +92,11 @@ body {
 .category-item {
   text-decoration: none;
   color:#000000;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
   line-height: 24px;
+  letter-spacing: -0.02em;
 }
 
 .category-icon {
@@ -94,6 +115,21 @@ body {
 
 .delivery-banner {
   background-color:#F0F0F0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.about-companies {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 .about-contacts h3 {
@@ -174,16 +210,19 @@ body {
 }
 
 .filter-name {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
-  font-family: "Raleway", "Arial", sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .filter legend {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 .filter label {
@@ -195,6 +234,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 .item-price {
@@ -203,11 +243,12 @@ body {
 }
 
 .catalog-more {
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
-  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .catalog-paginator-link {
@@ -215,4 +256,5 @@ body {
   line-height: 20px;
   color: #444444;
   text-decoration: none;
+  opacity: 0.3;
 }
