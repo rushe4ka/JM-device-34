@@ -30,6 +30,14 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
 .link {
   text-decoration: none;
   font-family: "Raleway", "Arial", sans-serif;
@@ -213,6 +221,14 @@ body {
 
 .footer-social {
   list-style-type: none;
+}
+
+.social-link {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 /* Catalog */
