@@ -32,7 +32,7 @@ body {
 
 .link {
   text-decoration: none;
-  font-family: "Railway", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -49,7 +49,7 @@ body {
 /* Slider */
 
 .section-title {
-  font-family: "Railway", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -177,7 +177,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  font-family: "Railway", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
 }
 
 .filter legend {
@@ -206,7 +206,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  font-family: "Railway", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
 }
 
