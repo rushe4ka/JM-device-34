@@ -49,6 +49,13 @@ body {
   text-transform: uppercase;
 }
 
+.section-title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
 /* Header */
 
 .header {
@@ -81,11 +88,11 @@ body {
   list-style-type: none;
 }
 
-.section-title {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
+.slide-number {
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
 
 .slide-text {
