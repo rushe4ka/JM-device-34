@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -81,13 +81,13 @@ img {
 }
 
 .header-button {
-  text-decoration: none;
-  color: #000000;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .main-navigation ul {
@@ -133,13 +133,13 @@ img {
 }
 
 .category-item {
-  text-decoration: none;
-  color:#000000;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.02em;
+  text-decoration: none;
+  color:#000000;
 }
 
 .category-icon {
@@ -165,7 +165,6 @@ img {
 }
 
 .delivery-banner {
-  background-color:#F0F0F0;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -174,6 +173,7 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background-color:#F0F0F0;
 }
 
 .about-companies {
@@ -190,8 +190,8 @@ img {
 }
 
 .about-text {
-  color: #444444;
   font-style: normal;
+  color: #444444;
 }
 
 .about-tel {
@@ -227,15 +227,15 @@ img {
 }
 
 .footer-address {
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  font-style: normal;
 }
 
 .footer-tel {
-  text-decoration: none;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 .footer-social {
@@ -244,9 +244,9 @@ img {
 
 .social-link {
   display: block;
-  background-color: rgba(255, 255, 255, 0.3);
   width: 40px;
   height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
@@ -274,10 +274,10 @@ img {
 .filter-name {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .filter legend {
@@ -319,8 +319,8 @@ img {
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
-  text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .catalog-paginator-list {
@@ -330,7 +330,7 @@ img {
 .catalog-paginator-link {
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
   text-decoration: none;
+  color: #444444;
   opacity: 0.3;
 }
