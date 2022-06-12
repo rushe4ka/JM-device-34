@@ -75,7 +75,6 @@ img {
   display: flex;
   background: #FFE17F;
   width: 1160px;
-  height: 186px;
   margin: 0 auto;
   margin-top: 40px;
   padding-bottom: 14px;
@@ -166,6 +165,13 @@ img {
 
 /* Slider */
 
+.slider-container {
+  width: 1160px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
 .slide-number {
   position: absolute;
   width: 250px;
@@ -183,21 +189,67 @@ img {
   background-color: rgb(255, 143, 143);
 }
 
-.main-slider {
+.slides-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.slides-item {
+  display: flex;
+}
+
+.slides-item img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+
+.slide-desc-wrapper {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.slide-title {
+  margin: 0;
+  margin-top: 121px;
+  margin-bottom: 29px;
 }
 
 .slide-text {
   color: #444444;
+  margin-bottom: 61px;
 }
 
-.slide-spec-termin {
+.slide-button {
+  margin-bottom: 59px;
+}
+
+.slide-spec {
+  display: flex;
+  margin: 0;
+}
+
+.spec-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.spec-termin {
   font-size: 16px;
   line-height: 30px;
   color: #444444;
+  order: 1;
+  margin-bottom: 38px;
 }
 
-.slide-spec-definition {
+.spec-definition {
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 36px;
   line-height: 30px;
 }
