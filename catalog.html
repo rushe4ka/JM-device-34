@@ -7,35 +7,39 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img class="header-logo" src="images/device-logo.svg" alt="Логотип Device." width="145" height="36"></a>
-      <div class="header-useful">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input class="header-button-search" type="search" placeholder="Текст поиска">
-          <button class="header-button-search" type="submit">Найти</button>
-        </form>
-        <div class="login">
-          <button class="header-button button-log-in">Коля Петухов</button>
-          <button class="header-button button-log-out">Выйти</button>
+      <div class="header-container">
+        <a class="header-logo" href="#"><img src="images/device-logo.svg" alt="Логотип Device." width="145" height="36"></a>
+        <div class="header-useful">
+          <div class="search-wrapper">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input class="header-button-search" type="search" placeholder="Текст поиска">
+              <button class="header-button-search" type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="login-wrapper">
+            <button class="header-button button-log-in">Коля Петухов</button>
+            <button class="header-button button-log-out">Выйти</button>
+          </div>
+          <a class="header-button compare" href="#">Сравнить</a>
+          <a class="header-button basket" href="#">Корзина</a>
         </div>
-        <a class="header-button compare" href="#">Сравнить</a>
-        <a class="header-button basket" href="#">Корзина</a>
+        <nav>
+          <ul class="main-navigation">
+            <li class="navigation-link">
+              <a class="catalog link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a class="navigation-link catalog link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="catalog-main">

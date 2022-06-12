@@ -29,12 +29,13 @@
 }
 
 body {
+  width: 1440px;
+  margin: 0;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background: #FFFFFF;
   color: #000000;
-  margin: 0;
 }
 
 img {
@@ -71,13 +72,50 @@ img {
 /* Header */
 
 .header {
+  display: flex;
   background: #FFE17F;
+  width: 1160px;
+  height: 186px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 14px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1040px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.header-logo {
+  display: block;
+  margin-bottom: 35px;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-logo img {
+  vertical-align: middle;
+}
+
+.search-wrapper {
+  width: 517px;
+  background-color: yellow;
 }
 
 .header-button-search {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.header-useful {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .header-button {
@@ -90,21 +128,63 @@ img {
   color: #000000;
 }
 
-.main-navigation ul {
+.login-wrapper {
+  width: 231px;
+  background-color: green;
+}
+
+.compare {
+  margin-left: auto;
+}
+
+.basket {
+  margin-left: 61px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 50px;
   list-style-type: none;
+  background-color: grey;
+}
+
+.navigation-link:nth-child(2) {
+  margin-left: auto;
+}
+
+.navigation-link:nth-child(3) {
+  margin-left: 47px;
+}
+
+.navigation-link:last-child {
+  margin-left: 51px;
 }
 
 /* Slider */
 
-.main-slider {
-  list-style-type: none;
+.slide-number {
+  position: absolute;
+  width: 250px;
+  height: 135px;
+  left: 1001px;
+  top: 219px;
+  outline: 1px solid green;
+  outline-offset: -1px;
 }
 
-.slide-number {
+.slide-number-text {
   font-weight: 700;
   font-size: 180px;
-  line-height: 30px;
   color: #FFFFFF;
+  background-color: rgb(255, 143, 143);
+}
+
+.main-slider {
+  list-style-type: none;
 }
 
 .slide-text {
@@ -144,7 +224,6 @@ img {
 
 .category-icon {
   width: 160px;
-  height: 160px;
   background-color: #FFE17F;
 }
 

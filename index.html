@@ -7,45 +7,51 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img class="header-logo" src="images/device-logo.svg" alt="Логотип Device." width="145" height="36"></a>
-      <div class="header-useful">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input class="header-button-search" type="search" placeholder="Текст поиска">
-          <button class="header-button-search" type="submit">Найти</button>
-        </form>
-        <div class="login">
-          <button class="header-button button-log-in">Войти</button>
-          <button class="header-button button-log-out">Выйти</button>
+      <div class="header-container">
+        <a class="header-logo" href="#"><img src="images/device-logo.svg" alt="Логотип Device." width="145" height="36"></a>
+        <div class="header-useful">
+          <div class="search-wrapper">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input class="header-button-search" type="search" placeholder="Текст поиска">
+              <button class="header-button-search" type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="login-wrapper">
+            <button class="header-button button-log-in">Войти</button>
+            <button class="header-button button-log-out">Выйти</button>
+          </div>
+          <a class="header-button compare" href="#">Сравнить</a>
+          <a class="header-button basket" href="#">Корзина</a>
         </div>
-        <a class="header-button compare" href="#">Сравнить</a>
-        <a class="header-button basket" href="#">Корзина</a>
+        <nav>
+          <ul class="main-navigation">
+            <li class="navigation-link">
+              <a class="catalog link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-link">
+              <a class="link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a class="navigation-link catalog link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин электроники "Device"</h1>
       <section>
+        <div class="slide-number">
+          <span class="slide-number-text">01</span>
+        </div>
         <ol class="main-slider">
           <li>
             <img src="images/slider/slider-1.png" alt="Квадрокоптер в белом корпусе." width="560" height="560">
             <h2 class="section-title">Порхает как бабочка, жалит как пчела!</h2>
-            <span class="slide-number">01</span>
             <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a class="button link" href="#">Подробнее</a>
@@ -59,7 +65,6 @@
           <li>
             <img src="images/slider/slider-2.png" alt="Фитнес-браслет черного цвета." width="560" height="560">
             <h2 class="section-title">Худеем правильно!</h2>
-            <span class="slide-number">02</span>
             <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a class="button link" href="#">Подробнее</a>
@@ -71,7 +76,6 @@
           <li>
             <img src="images/slider/slider-3.png" alt="Селфи-палка раскладная." width="560" height="560">
             <h2 class="section-title">Делай селфи, как&nbsp;Бен Стиллер!</h2>
-            <span class="slide-number">03</span>
             <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5&nbsp;кг.
             </p>
             <a class="button link" href="#">Подробнее</a>
