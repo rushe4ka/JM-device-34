@@ -366,9 +366,16 @@ img {
   color: #444444;
 }
 
-/* Delivery */
+/* Delivery banner */
 
 .delivery-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  height: 100px;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -380,21 +387,79 @@ img {
   background-color:#F0F0F0;
 }
 
-.about-companies {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: -0.02em;
+/* About */
+
+.about-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 80px;
+  outline: 2px solid green;
+  outline-offset: -2px;
 }
 
-.about-contacts h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #444444;
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  margin-right: 108px;
+  outline: 2px solid rgb(128, 0, 100);
+  outline-offset: -2px;
+}
+
+.about-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 532px;
+  outline: 2px solid rgb(128, 26, 0);
+  outline-offset: -2px;
+}
+
+.about-title {
+  margin: 0;
+  margin-bottom: 48px;
 }
 
 .about-text {
   font-style: normal;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-companies {
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.about-companies li {
+  margin-bottom: 19px;
+  color: #FFC700;
+}
+
+.about-companies li:last-child {
+  margin-bottom: 0;
+}
+
+.companies-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.about-link {
+  height: 20px;
+}
+
+.about-contacts h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
   color: #444444;
 }
 
@@ -403,11 +468,40 @@ img {
   color: #444444;
 }
 
+.about-worktime {
+  margin-bottom: 40px;
+}
+
+/* Subscription */
+
 .subscription {
   background-color:#F0F0F0;
 }
 
+.subscription-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 56px;
+  outline: 2px solid rgb(128, 0, 0);
+  outline-offset: -2px;
+}
+
+.subscription-title {
+  width: 400px;
+  margin: 0;
+  margin-right: 200px;
+  margin-bottom: 144px;
+}
+
 .subscription-description {
+  margin: 0;
+  margin-bottom: 144px;
+  width: 560px;
   color: #444444;
 }
 
