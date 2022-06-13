@@ -52,6 +52,7 @@ img {
 }
 
 .link {
+  height: 20px;
   text-decoration: none;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -451,10 +452,6 @@ img {
   color: #000000;
 }
 
-.about-link {
-  height: 20px;
-}
-
 .about-contacts h3 {
   margin: 0;
   margin-bottom: 15px;
@@ -583,11 +580,15 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+}
+
+.social-link img {
+  margin: auto;
 }
 
 .footer-contacts-wrapper {
@@ -603,7 +604,6 @@ img {
 
 .footer-tel {
   height: 20px;
-  align-
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
