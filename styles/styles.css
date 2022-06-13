@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -604,32 +608,67 @@ img {
 
 /* Catalog */
 
-.catalog-main {
+.catalog {
   background-color: #F0F0F0;
 }
 
 .catalog-header {
-  background-color: #FFFFFF;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.catalog-title {
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
   list-style-type: none;
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+  display: flex;
 }
 
 .breadcrumbs-link {
+  margin-right: 36px;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: #000000;
 }
 
-.filter-name {
+.catalog-wrap {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+  margin-right: 40px;
+  padding: 25px 60px;
+}
+
+.catalog-filter h2 {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.filter-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.filter {
+  margin-bottom: 35px;
+}
+
+.filter:last-of-type {
+  margin-bottom: 50px;
 }
 
 .filter legend {
@@ -644,6 +683,36 @@ img {
   line-height: 19px;
 }
 
+.catalog-view {
+  width: 840px;
+  background-color: #FFFFFF;
+}
+
+.catalog-sort {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #F0F0F0;
+}
+
+.catalog-sort h2 {
+  margin: 0;
+}
+
+.catalog-list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 70px 40px 40px 40px;
+}
+
+.catalog-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .item-name {
   font-weight: 700;
   font-size: 18px;
@@ -656,17 +725,11 @@ img {
   color: #444444;
 }
 
-.catalog-list {
-  background-color: #FFFFFF;
-  list-style-type: none;
-}
-
-.catalog-item a {
-  text-decoration: none;
-  color: #000000;
-}
-
 .catalog-more {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 44px;
+  background-color: #FFFFFF;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -675,7 +738,18 @@ img {
   text-transform: uppercase;
 }
 
+.catalog-paginator {
+  width: 100%;
+  margin-bottom: 78px;
+  padding: 25px;
+  background-color: #F0F0F0;
+}
+
 .catalog-paginator-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
