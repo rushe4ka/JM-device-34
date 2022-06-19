@@ -121,8 +121,8 @@ img {
 .header-logo {
   display: block;
   margin-bottom: 30px;
-  width: 145px;
-  height: 36px;
+  min-width: 145px;
+  min-height: 36px;
 }
 
 .header-button-search {
@@ -174,12 +174,8 @@ img {
   margin-left: auto;
 }
 
-.navigation-link:nth-child(3) {
-  margin-left: 47px;
-}
-
-.navigation-link:last-child {
-  margin-left: 51px;
+.navigation-link {
+  margin-left: 50px;
 }
 
 /* Slider */
@@ -302,18 +298,14 @@ img {
 
 .category-icon {
   display: flex;
-  width: 160px;
-  height: 160px;
+  min-width: 160px;
+  min-height: 160px;
   margin-bottom: 33px;
   background-color: #FFE17F;
 }
 
 .category-icon img {
   margin: auto;
-}
-
-.category-icon span {
-  height: 60px;
 }
 
 /* Services */
@@ -571,24 +563,19 @@ img {
   padding: 0;
 }
 
-.footer-social li {
+.social-item {
   margin-right: 15px;
-}
-
-.footer-social li:last-child {
-  margin-right: 0;
-}
-
-.social-link {
   display: flex;
-  width: 40px;
-  height: 40px;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
-.social-link img {
-  margin: auto;
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-contacts-wrapper {
@@ -604,6 +591,12 @@ img {
   height: 20px;
   margin-bottom: 63px;
   text-decoration: none;
+}
+
+.footer-developer {
+  display: block;
+  min-width: 115px;
+  min-height: 33px;
 }
 
 .footer-developer img {
