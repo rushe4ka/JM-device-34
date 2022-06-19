@@ -162,6 +162,7 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -547,6 +548,7 @@ img {
 .footer-nav-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-bottom: 62px;
