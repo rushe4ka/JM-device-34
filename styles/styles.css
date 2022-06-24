@@ -217,10 +217,6 @@ img {
   vertical-align: middle;
 }
 
-.slide-desc-wrapper {
-  justify-content: space-between;
-}
-
 .slide-title {
   margin: 0;
   margin-top: 121px;
@@ -348,7 +344,6 @@ img {
 }
 
 .services-list li {
-  width: 729px;
   padding: 72px 60px 72px 116px;
 }
 
@@ -777,8 +772,6 @@ img {
 
 .footer-tel {
   margin-bottom: 63px;
-  text-decoration: none;
-  text-decoration: underline;
 }
 
 .footer-developer {
