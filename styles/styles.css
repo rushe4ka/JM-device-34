@@ -93,9 +93,24 @@ img {
 
 .button {
   display: block;
+  position: relative;
+  z-index: 0;
   outline: 2px solid rgb(185, 185, 0);
   outline-offset: -2px;
   padding: 10px 0;
+  text-align: center;
+}
+
+.button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  bottom: 40%;
+  width: 100%;
+  height: 8px;
+  background: #FFE17F;
 }
 
 .section-title {
@@ -243,7 +258,8 @@ img {
   margin-bottom: 51px;
 }
 
-.slide-button {
+.button-slide-detailed {
+  width: 220px;
   margin-bottom: 49px;
 }
 
@@ -511,6 +527,10 @@ img {
   color: #000000;
 }
 
+.button-about-detailed {
+  width: 270px;
+}
+
 .about-contacts h3 {
   margin: 0;
   margin-bottom: 15px;
@@ -526,6 +546,10 @@ img {
 
 .about-worktime {
   margin-bottom: 30px;
+}
+
+.button-about-mailus {
+  width: 260px;
 }
 
 /* Subscription */
@@ -645,6 +669,10 @@ img {
 .filter label {
   font-size: 16px;
   line-height: 19px;
+}
+
+.button-filter-show {
+  width: 220px;
 }
 
 .catalog-view {
