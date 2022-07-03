@@ -125,12 +125,6 @@ img {
   min-height: 36px;
 }
 
-.header-button-search {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .header-useful {
   display: flex;
   align-items: center;
