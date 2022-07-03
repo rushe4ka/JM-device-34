@@ -380,13 +380,17 @@ img {
 }
 
 .service-button {
-  width: 272px;
+  width: 160px;
   margin-bottom: 35px;
   border: none;
 }
 
 .service-button-active {
   width: 274px;
+  margin-bottom: 35px;
+  padding: 10px 0;
+  padding-right: 120px;
+  border: none;
   background-color: #000000;
   color: #FFE17F;
 }
