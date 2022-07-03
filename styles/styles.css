@@ -382,9 +382,23 @@ img {
   list-style-type: none;
 }
 
-.services-list li {
-  padding: 72px 60px 72px 116px;
+.service-list-item {
+  display: grid;
+  padding: 62px 168px 134px 116px;
+  grid-template-columns: auto auto;
+  grid-column-gap: 80px;
 }
+
+.service-list-item::after {
+  display: block;
+  content: "";
+  width: 170px;
+  height: 180px;
+
+  background-image: url("/images/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  }
 
 .service-title {
   margin: 0;
