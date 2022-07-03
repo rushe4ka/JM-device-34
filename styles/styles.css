@@ -137,6 +137,19 @@ img {
   margin-bottom: 30px;
 }
 
+.header-useful form {
+  display: grid;
+  grid-template-columns: 360px 160px;
+}
+
+.header-search {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header-button {
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
