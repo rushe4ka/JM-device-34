@@ -228,8 +228,6 @@ img {
 .slide-img-container img {
   display: block;
   width: 100%;
-  object-fit: cover;
-  vertical-align: middle;
   grid-area: 1 / 1 /  4 / 4;
 }
 
@@ -296,6 +294,7 @@ img {
 
 .button-slide-prev {
   grid-area: prev;
+  margin-left: 30px;
 }
 
 .button-slide-next {
@@ -390,7 +389,6 @@ img {
 }
 
 .service-list-item::after {
-  display: block;
   content: "";
   width: 170px;
   height: 180px;
