@@ -375,16 +375,25 @@ img {
 /* Delivery banner */
 
 .delivery-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
   margin-bottom: 70px;
-  padding: 40px 125px;
   background-color:#F0F0F0;
 }
 
-.delivery-banner p {
-  margin: 0;
+.delivery-icon {
+  display: flex;
+  background-color: #FFE17F;
+}
+
+.delivery-icon img {
+  margin: auto;
+}
+
+.delivery-slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -393,6 +402,25 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.delivery-info-wrapper {
+  display: flex;
+}
+
+.delivery-info {
+  display: block;
+  margin: 30px 42px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:rgba(220, 220, 220, 0.5);
+}
+
+.delivery-info img {
+  margin: auto;
+  width: 2px;
+  height: 12px;
 }
 
 /* About */
