@@ -491,30 +491,43 @@ img {
   background-color:#F0F0F0;
 }
 
-.subscription-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
+.subscription .container {
   padding-top: 64px;
   padding-bottom: 56px;
+}
+
+.subscription-container {
+  display: grid;
+  grid-template-columns: 1fr 560px;
+  column-gap: 40px;
+  margin-bottom: 144px;
 }
 
 .subscription-title {
   width: 400px;
   margin: 0;
-  margin-right: 200px;
-  margin-bottom: 144px;
+  margin-right: 20px;
 }
 
 .subscription-description {
   margin: 0;
-  margin-bottom: 144px;
   width: 560px;
   color: #444444;
 }
 
+.subscription-form {
+  display: grid;
+  grid-template-columns: 557px 253px 1fr;
+}
+
+.subscription-button {
+  padding: 18px 39px;
+}
+
 .subscription-notice {
+  display: block;
+  margin: auto;
+  margin-right: 0;
   color: #444444;
 }
 
