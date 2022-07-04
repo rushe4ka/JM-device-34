@@ -24,7 +24,7 @@
         <nav>
           <ul class="main-navigation">
             <li class="navigation-link">
-              <a class="catalog link" href="catalog.html">Каталог товаров</a>
+              <a class="catalog-link link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="navigation-link">
               <a class="link" href="#">Доставка</a>
@@ -50,14 +50,6 @@
           <li class="slides-item">
             <div class="slide-img-container">
               <img src="images/slider/slider-1.png" alt="Квадрокоптер в белом корпусе." width="560" height="560">
-              <div class="slider-buttons outline-green">
-                <button class="button-slide button-slide-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                </button>
-                <button class="button-slide button-slide-next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                </button>
-              </div>
             </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -80,14 +72,6 @@
           <li class="slides-item visually-hidden">
             <div class="slide-img-container">
               <img src="images/slider/slider-2.png" alt="Фитнес-браслет черного цвета." width="560" height="560">
-              <div class="slider-buttons outline-green">
-                <button class="button-slide button-slide-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                </button>
-                <button class="button-slide button-slide-next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                </button>
-              </div>
             </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Худеем правильно!</h2>
@@ -106,14 +90,6 @@
           <li class="slides-item visually-hidden">
             <div class="slide-img-container">
               <img src="images/slider/slider-3.png" alt="Селфи-палка раскладная." width="560" height="560">
-              <div class="slider-buttons outline-green">
-                <button class="button-slide button-slide-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                </button>
-                <button class="button-slide button-slide-next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                </button>
-              </div>
             </div>
             <div class="slide-desc-wrapper">
               <h2 class="slide-title section-title">Делай селфи, как&nbsp;Бен Стиллер!</h2>
@@ -138,6 +114,14 @@
             </div>
           </li>
         </ol>
+        <div class="slider-buttons outline-green">
+          <button class="button-slide button-slide-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="button-slide button-slide-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
         <ol class="slider-paginator visually-hidden">
           <li class="slider-paginator-item">
             <button class="slider-paginator-dot slider-paginator-dot-checked"></button>
@@ -158,42 +142,42 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/virtual.svg" alt="" width="97" height="55"></div>
               <span>Виртуальная реальность</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/selfie.svg" alt="" width="86" height="117"></div>
               <span>Моноподы для селфи</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/action-cam.svg" alt="" width="71" height="87"></div>
               <span>Экшн-камеры</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/fitness.svg" alt="" width="107" height="65"></div>
               <span>Фитнес-браслеты</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/clock.svg" alt="" width="56" height="98"></div>
               <span>Умные часы</span>
             </a>
           </li>
           <li>
-            <a class="category-item" href="#">
+            <a class="category-item" href="/catalog.html">
               <div class="category-icon">
                 <img src="images/category/kopter.svg" alt="" width="132" height="69"></div>
               <span>Квадрокоптеры</span>
@@ -217,19 +201,19 @@
             </li>
           </ol>
           <ol class="services-list">
-            <li class="service-list-item">
+            <li class="service-list-item service-list-delivery visually-hidden">
               <div class="service-wrapper">
                 <h2 class="service-title section-title">Доставка</h2>
                 <p class="service-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
               </div>
             </li>
-            <li class="service-list-item visually-hidden">
+            <li class="service-list-item service-list-warranty visually-hidden">
               <div class="service-wrapper">
                 <h2 class="service-title section-title">Гарантия</h2>
                 <p class="service-text">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
               </div>
             </li>
-            <li class="service-list-item visually-hidden">
+            <li class="service-list-item service-list-credit">
               <div class="service-wrapper">
                 <h2 class="service-title section-title">Кредит</h2>
                 <p class="service-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -241,13 +225,7 @@
 
       <section class="container delivery-banner">
         <h2 class="visually-hidden">Доставка</h2>
-        <div class="delivery-icon">
-          <img src="/images/icons/delivery-icon.svg" alt="" width="47" height="31">
-        </div>
         <p class="delivery-slogan">Доставим редкий товар под заказ</p>
-        <div class="delivery-info-wrapper">
-          <a href="#" class="delivery-info"></a>
-        </div>
       </section>
 
       <div class="container about-container outline-red">
