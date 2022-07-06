@@ -146,17 +146,38 @@ img {
   margin-bottom: 30px;
 }
 
-.header-useful form {
+.header-search {
   display: grid;
   grid-template-columns: 360px 160px;
 }
 
-.header-search {
+.header-search input {
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  color: #000000;
+}
+
+.header-search input::placeholder {
+  color: #000000;
+}
+
+.header-search-button {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-left: 0;
+  border-radius: 0 50px 50px 0;
 }
 
 .header-button {
@@ -693,14 +714,22 @@ img {
   grid-template-columns: 557px 253px 1fr;
 }
 
-.subscription-form [input] {
+.subscription-form input {
   padding: 0;
   padding-left: 16px;
   border: none;
   border-bottom: 3px solid #C4C4C4;
   background-color: transparent;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+.subscription-form input::placeholder {
+  color: #000000;
+  opacity: 0.5;
 }
 
 .subscription-button {
