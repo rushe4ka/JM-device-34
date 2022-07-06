@@ -81,6 +81,7 @@ img {
 }
 
 .link {
+  display: block;
   text-decoration: none;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -1120,6 +1121,10 @@ img {
   min-height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+}
+
+.social-link img {
+  display: block;
 }
 
 .social-item:last-child {
