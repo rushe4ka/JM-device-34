@@ -847,7 +847,8 @@ img {
   width: 4px;
   height: 7px;
   right: 16px;
-  top: -3px;
+  top: -2px;
+  opacity: 0.2;
 }
 
 .catalog-wrap {
@@ -904,7 +905,6 @@ img {
 
 .catalog-sort {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 25px 40px;
   background-color: #F0F0F0;
@@ -912,20 +912,39 @@ img {
 
 .catalog-sort h2 {
   margin: 0;
+  margin-right: 206px;
+}
+
+.select-control {
+  width: 141px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.select-sort {
+  display: flex;
+  margin-left: auto;
 }
 
 .sort-button {
+  display: block;
   width: 30px;
+  height: 30px;
   padding: 10px;
-  background: aquamarine no-repeat center / 11px 10px;
+  opacity: 0.2;
 }
 
 .sort-up {
-  background-image: url("../images/icons/sort-up-icon.svg");
+  background: url("../images/icons/sort-up-icon.svg") no-repeat center / 11px 10px;
 }
 
 .sort-down {
-  background-image: url("../images/icons/sort-down-icon.svg");
+  background: url("../images/icons/sort-down-icon.svg") no-repeat center / 11px 10px;
 }
 
 .catalog-list {
