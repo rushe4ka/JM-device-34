@@ -525,8 +525,7 @@ img {
   left: 0;
   top: 0;
 
-  background: url('../images/icons/delivery-icon.svg') no-repeat center / 47px 31px;
-  background-color: #FFE17F;
+  background: #FFE17F url('../images/icons/delivery-icon.svg') no-repeat center / 47px 31px;
 }
 
 .delivery-slogan::after {
@@ -540,8 +539,7 @@ img {
   height: 40px;
   border-radius: 50%;
 
-  background: url('../images/icons/i-icon.svg') no-repeat center / 2px 12px;
-  background-color: rgba(220, 220, 220, 0.5);
+  background: rgba(220, 220, 220, 0.5) url('../images/icons/i-icon.svg') no-repeat center / 2px 12px;
 }
 
 /* About */
