@@ -169,17 +169,79 @@ img {
   color: #000000;
 }
 
+.button-log-in {
+  position: relative;
+  margin-left: 53px;
+  padding: 0;
+  border: none;
+  text-align: end;
+  background-color: transparent;
+}
+
+.button-log-in::before {
+  position: absolute;
+  left: -26px;
+  content: url("../images/icons/login-icon.svg");
+  width: 13px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.button-log-out {
+  margin-left: 28px;
+  padding: 0;
+  border: none;
+  text-align: end;
+  background-color: transparent;
+}
+
 .compare {
-  width: 105px;
+  position: relative;
   margin-left: auto;
+  width: 105px;
   text-align: end;
 }
 
+.compare::before {
+  position: absolute;
+  left: 0;
+  content: url("../images/icons/compare-icon.svg");
+  width: 10px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
 .basket {
-  width: 117px;
-  margin-left: 18px;
+  position: relative;
+  margin-left: 36px;
+  width: 99px;
   text-align: end;
 }
+
+.basket::before {
+  position: absolute;
+  left: 0;
+  content: url("../images/icons/cart-icon.svg");
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+}
+
+/*.basket::after {
+  position: absolute;
+  left: -13px;
+  top: 4px;
+  width: 21px;
+  height: 21px;
+  content: "2";
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
 
 .main-navigation {
   display: flex;
@@ -464,8 +526,12 @@ img {
   padding: 0;
   left: 0;
   top: 0;
+
   background-color: #FFE17F;
-  /* background-image: url('../images/icons/delivery-icon.svg'); */
+  background-image: url('../images/icons/delivery-icon.svg');
+  background-size: 47px 31px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .delivery-slogan::after {
@@ -478,8 +544,12 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
   background-color: rgba(220, 220, 220, 0.5);
-  /* background-image: url('../images/icons/i-icon.svg'); */
+  background-image: url('../images/icons/i-icon.svg');
+  background-size: 2px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* About */
@@ -492,6 +562,16 @@ img {
 
 .about-us {
   width: 520px;
+}
+
+.about-us::before,
+.about-contacts::before {
+  display: block;
+  margin-bottom: 40px;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
 }
 
 .about-contacts {
@@ -598,10 +678,21 @@ img {
 }
 
 .subscription-notice {
+  position: relative;
   display: block;
+  text-align: end;
   margin: auto;
   margin-right: 0;
+  width: 160px;
   color: #444444;
+}
+
+.subscription-notice::before {
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  content: url("../images/icons/tick.svg");
 }
 
 /* Catalog */
@@ -626,12 +717,25 @@ img {
   display: flex;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
 .breadcrumbs-link {
   margin-right: 36px;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: #000000;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  content: url("../images/breadcrumbs.svg");
+  width: 4px;
+  height: 7px;
+  right: 16px;
+  top: -3px;
 }
 
 .catalog-wrap {
@@ -687,7 +791,6 @@ img {
 }
 
 .catalog-sort {
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -697,6 +800,23 @@ img {
 
 .catalog-sort h2 {
   margin: 0;
+}
+
+.sort-button {
+  width: 30px;
+  padding: 10px;
+  background-color: aquamarine;
+  background-size: 11px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sort-up {
+  background-image: url("../images/icons/sort-up-icon.svg");
+}
+
+.sort-down {
+  background-image: url("../images/icons/sort-down-icon.svg");
 }
 
 .catalog-list {
@@ -820,10 +940,12 @@ img {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding-bottom: 61px;
 }
 
 .footer-address-wrapper {
+  position: relative;
   width: 240px;
   margin-top: 62px;
 }
@@ -836,6 +958,15 @@ img {
 .footer-address {
   margin-bottom: 64px;
   font-style: normal;
+}
+
+.footer-address-wrapper::after {
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  content: "";
+  bottom: 0;
 }
 
 .footer-nav-wrapper {
