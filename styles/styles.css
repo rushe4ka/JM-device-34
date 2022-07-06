@@ -500,13 +500,24 @@ img {
 }
 
 .services-slider {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 64px;
-  padding-bottom: 75px;
+  padding-bottom: 26px;
   width: 280px;
   list-style-type: none;
-  border-right: 7px solid #000000;
+}
+
+.services-slider::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
 }
 
 .service-button {
@@ -517,10 +528,8 @@ img {
 
 .service-button-active {
   width: 274px;
-  margin-bottom: 35px;
   padding: 10px 0;
   padding-right: 120px;
-  border: none;
   background-color: #000000;
   color: #FFE17F;
 }
@@ -533,7 +542,7 @@ img {
 
 .service-list-item {
   display: grid;
-  padding: 62px 168px 134px 116px;
+  padding: 62px 168px 77px 116px;
   grid-template-columns: auto auto;
   grid-column-gap: 80px;
 }
