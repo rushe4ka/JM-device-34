@@ -385,9 +385,18 @@ img {
 }
 
 .button-slide {
-  background-color: rgb(214, 11, 11);
   width: 20px;
   height: 60px;
+  background: no-repeat center;
+  border: none;
+}
+
+.button-slide-prev {
+  background-image: url("../images/arrow-slider-left.svg");
+}
+
+.button-slide-next {
+  background-image: url("../images/arrow-slider-right.svg");
 }
 
 /* Category */
