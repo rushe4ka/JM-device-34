@@ -693,8 +693,19 @@ img {
   grid-template-columns: 557px 253px 1fr;
 }
 
+.subscription-form [input] {
+  padding: 0;
+  padding-left: 16px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .subscription-button {
   padding: 18px 39px;
+  border: 3px solid #C4C4C4;
 }
 
 .subscription-notice {
