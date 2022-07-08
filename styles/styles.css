@@ -1199,3 +1199,21 @@ button {
 .breadcrumbs-link:hover {
   opacity: 0.6;
 }
+
+.button:hover {
+  background: #FFE17F;
+}
+
+.button:active,
+.button:active::after {
+  background: #FFCC33;
+}
+
+.button:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: -2px;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
