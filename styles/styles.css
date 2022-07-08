@@ -1182,17 +1182,20 @@ button {
 /* Состояния */
 
 .header-logo:focus,
-.footer-logo:focus {
+.footer-logo:focus,
+.breadcrumbs-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
 }
 
 .header-logo:active,
-.footer-logo:active {
+.footer-logo:active,
+.breadcrumbs-link:active {
   opacity: 0.3;
 }
 
 .header-logo:hover,
-.footer-logo:hover {
+.footer-logo:hover,
+.breadcrumbs-link:hover {
   opacity: 0.6;
 }
