@@ -69,6 +69,10 @@ img {
   object-fit: contain;
 }
 
+button {
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -103,10 +107,10 @@ img {
 }
 
 .button::after {
-  display: block;
   content: "";
   position: absolute;
   z-index: -1;
+  left: 0;
   top: 40%;
   bottom: 40%;
   width: 100%;
@@ -154,14 +158,13 @@ img {
 }
 
 .header-search::before {
-  display: block;
   position: absolute;
   top: 14px;
   left: 16px;
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url(../images/icons/search-icon.svg);
+  background-image: url("../images/icons/search-icon.svg");
 }
 
 .header-search input {
@@ -309,7 +312,6 @@ img {
 
 .catalog-link::after {
   position: absolute;
-  display: block;
   content: "";
   right: 0;
   top: -14px;
@@ -527,7 +529,6 @@ img {
 
 .services-slider::after {
   position: absolute;
-  display: block;
   content: "";
   top: 0;
   right: 0;
@@ -619,7 +620,6 @@ img {
 
 .delivery-slogan::before {
   position: absolute;
-  display: block;
   content: "";
   width: 125px;
   height: 100%;
@@ -627,7 +627,7 @@ img {
   left: 0;
   top: 0;
 
-  background: #FFE17F url('../images/icons/delivery-icon.svg') no-repeat center / 47px 31px;
+  background: #FFE17F url("../images/icons/delivery-icon.svg") no-repeat center / 47px 31px;
 }
 
 .delivery-slogan::after {
@@ -641,7 +641,7 @@ img {
   height: 40px;
   border-radius: 50%;
 
-  background: rgba(220, 220, 220, 0.5) url('../images/icons/i-icon.svg') no-repeat center / 2px 12px;
+  background: rgba(220, 220, 220, 0.5) url("../images/icons/i-icon.svg") no-repeat center / 2px 12px;
 }
 
 /* About */
@@ -933,9 +933,9 @@ img {
 
 .sort-button {
   display: block;
-  width: 30px;
-  height: 30px;
-  padding: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0;
   opacity: 0.2;
 }
 
