@@ -1141,9 +1141,15 @@ button {
 
 .social-item {
   margin-right: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  position: relative;
+  display: block;
   min-width: 40px;
   min-height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1151,11 +1157,12 @@ button {
 }
 
 .social-link img {
-  display: block;
-}
-
-.social-item:last-child {
-  margin-right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .footer-contacts-wrapper {
@@ -1283,4 +1290,21 @@ button {
 
 .button-slide:disabled {
   opacity: 0.1;
+}
+
+.social-link:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.social-link:active {
+  background: #FFC700;
+}
+
+.social-link:hover {
+  background: #FFC700;
+}
+
+.social-link:hover img{
+  opacity: 0.3;
 }
