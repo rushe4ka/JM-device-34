@@ -429,6 +429,7 @@ button {
 .button-slide {
   width: 20px;
   height: 60px;
+  padding: 0;
   background: no-repeat center;
   border: none;
 }
@@ -1265,4 +1266,21 @@ button {
 .slider-paginator-dot:hover,
 .slider-paginator-dot-checked:hover {
   opacity: 0.6;
+}
+
+.button-slide:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.button-slide:active {
+  opacity: 0.3;
+}
+
+.button-slide:hover {
+  opacity: 0.6;
+}
+
+.button-slide:disabled {
+  opacity: 0.1;
 }
