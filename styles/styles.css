@@ -1251,3 +1251,18 @@ button {
   background: #000000;
   border: 3px solid #000000;
 }
+
+.slider-paginator-dot:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.slider-paginator-dot:active,
+.slider-paginator-dot-checked:active {
+  opacity: 0.3;
+}
+
+.slider-paginator-dot:hover,
+.slider-paginator-dot-checked:hover {
+  opacity: 0.6;
+}
