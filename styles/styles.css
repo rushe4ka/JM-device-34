@@ -1200,8 +1200,9 @@ button {
   opacity: 0.6;
 }
 
-.button:hover {
-  background: #FFE17F;
+.button:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: -2px;
 }
 
 .button:active,
@@ -1209,11 +1210,43 @@ button {
   background: #FFCC33;
 }
 
-.button:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: -2px;
+.button:hover {
+  background: #FFE17F;
 }
 
 .button:disabled {
   opacity: 0.3;
+}
+
+.subscription-button:focus,
+.catalog-more:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.catalog-more:active {
+  border-color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-more:hover {
+  border-color: #000000;
+}
+
+.subscription-button:disabled,
+.catalog-more:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
+}
+
+.subscription-button:active {
+  background: #000000;
+  border: 3px solid #000000;
+  color: rgb(0 0 0 / 0.3);
+}
+
+.subscription-button:hover {
+  color: #FFFFFF;
+  background: #000000;
+  border: 3px solid #000000;
 }
