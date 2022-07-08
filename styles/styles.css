@@ -312,6 +312,7 @@ button {
 
 .catalog-link::after {
   position: absolute;
+  z-index: 1;
   content: "";
   right: 0;
   top: -14px;
@@ -328,26 +329,31 @@ button {
 .slider {
   position: relative;
   margin-bottom: 70px;
+  background-image: linear-gradient(#FFE17F 150px, #ffffff 150px);
 }
 
 .slide-number {
   position: absolute;
   width: 250px;
   height: 135px;
-  left: 1001px;
-  top: 219px;
+  right: 49px;
+  top: 27px;
+  text-align: end;
   outline: 1px solid rgb(137, 206, 9);
   outline-offset: -1px;
 }
 
 .slide-number-text {
+  width: 250px;
   font-weight: 700;
   font-size: 180px;
+  line-height: 135px;
   color: #FFFFFF;
-  background-color: rgb(255, 143, 143);
 }
 
 .slides-list {
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -633,7 +639,6 @@ button {
 .delivery-slogan::after {
   position: absolute;
   content: "";
-  display: block;
   top: 30px;
   right: 42px;
   margin: 0;
