@@ -1083,16 +1083,6 @@ button {
   margin-top: 62px;
 }
 
-.footer-address-wrapper a {
-  display: block;
-  margin-bottom: 35px;
-}
-
-.footer-address {
-  margin-bottom: 64px;
-  font-style: normal;
-}
-
 .footer-address-wrapper::after {
   position: absolute;
   bottom: 0;
@@ -1100,6 +1090,17 @@ button {
   width: 80px;
   height: 7px;
   background-color: #FFC700;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 35px;
+  width: 145px;
+}
+
+.footer-address {
+  margin-bottom: 64px;
+  font-style: normal;
 }
 
 .footer-nav-wrapper {
@@ -1176,4 +1177,22 @@ button {
 
 .footer-developer img {
   display: block;
+}
+
+/* Состояния */
+
+.header-logo:focus,
+.footer-logo:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.header-logo:active,
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+  opacity: 0.6;
 }
