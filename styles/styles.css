@@ -60,7 +60,7 @@ body {
 }
 
 .outline-green {
-  outline: 1px solid rgb(37, 175, 2);
+  outline: 1px solid rgb(37 175 2);
   outline-offset: -1px;
 }
 
@@ -100,7 +100,7 @@ button {
   display: block;
   position: relative;
   z-index: 0;
-  outline: 2px solid rgb(185, 185, 0);
+  outline: 2px solid rgb(185 185 0);
   outline-offset: -2px;
   padding: 10px 0;
   text-align: center;
@@ -340,7 +340,7 @@ button {
   right: 49px;
   top: 27px;
   text-align: end;
-  outline: 1px solid rgb(137, 206, 9);
+  outline: 1px solid rgb(137 206 9);
   outline-offset: -1px;
 }
 
@@ -648,7 +648,7 @@ button {
   height: 40px;
   border-radius: 50%;
 
-  background: rgba(220, 220, 220, 0.5) url("../images/icons/i-icon.svg") no-repeat center / 2px 12px;
+  background: rgb(220 220 220 / 0.5) url("../images/icons/i-icon.svg") no-repeat center / 2px 12px;
 }
 
 /* About */
@@ -1158,7 +1158,7 @@ button {
   display: block;
   min-width: 40px;
   min-height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(255 255 255 / 0.3);
   border-radius: 50%;
 }
 
@@ -1207,13 +1207,13 @@ button {
 .header-logo:focus,
 .footer-logo:focus,
 .breadcrumbs-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
 .header-search input:focus,
 .header-search-button:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1229,7 +1229,7 @@ button {
 
 .header-search-button:active {
   background-color: #000000;
-  color: rgb(F F F / 0.3);
+  color: rgb(255 255 255 / 0.3);
 }
 
 .button:hover {
@@ -1242,7 +1242,7 @@ button {
 }
 
 .button:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: -2px;
 }
 
@@ -1252,7 +1252,7 @@ button {
 
 .subscription-button:focus,
 .catalog-more:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1279,11 +1279,11 @@ button {
 .subscription-button:active {
   background: #000000;
   border: 3px solid #000000;
-  color: rgb(0 0 0 / 0.3);
+  color: rgb(255 255 255 / 0.3);
 }
 
 .slider-paginator-dot:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1306,7 +1306,7 @@ button {
 }
 
 .button-slide:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1323,20 +1323,20 @@ button {
 }
 
 .category-item:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
 .service-button-active:hover {
-  color: rgba(255, 225, 127, 0.5);
+  color: rgb(255 225 127 / 0.5);
 }
 
 .service-button-active:active {
-  color: rgba(255, 225, 127, 0.3);
+  color: rgb(255 225 127 / 0.3);
 }
 
 .service-button-active:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1349,7 +1349,7 @@ button {
 }
 
 .delivery-slogan:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1362,7 +1362,7 @@ button {
 }
 
 .sort-up:focus {
-  box-shadow: 0 0 0 2px rgb(175 79 255 / 1);
+  box-shadow: 0 0 0 2px rgb(175 79 255);
 }
 
 .catalog-paginator-link-prev:hover,
@@ -1377,7 +1377,7 @@ button {
 
 .catalog-paginator-link-prev:focus,
 .catalog-paginator-link-next:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1390,7 +1390,7 @@ button {
 }
 
 .catalog-paginator-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: -2px;
 }
 
@@ -1425,7 +1425,7 @@ button {
 }
 
 .footer-nav-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1442,7 +1442,7 @@ button {
 }
 
 .social-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1456,7 +1456,7 @@ button {
 }
 
 .footer-tel:focus {
-  outline: 2px solid rgb(175, 79, 255);
+  outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
 }
 
@@ -1470,6 +1470,6 @@ button {
 }
 
 .footer-developer:focus {
-  outline: 1px solid rgb(175, 79, 255);
+  outline: 1px solid rgb(175 79 255);
   outline-offset: 1px;
 }
