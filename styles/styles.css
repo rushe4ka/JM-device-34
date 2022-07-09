@@ -1292,6 +1292,19 @@ button {
   opacity: 0.1;
 }
 
+.category-item:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.category-icon:active {
+  background: #FFC700;
+}
+
+.category-item:hover {
+  opacity: 0.3;
+}
+
 .footer-nav-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
