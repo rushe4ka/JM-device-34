@@ -612,10 +612,12 @@ button {
 }
 
 .delivery-slogan {
+  display: block;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
 
+  color: #000000;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -624,6 +626,7 @@ button {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .delivery-slogan::before {
@@ -1303,6 +1306,19 @@ button {
 
 .category-item:hover {
   opacity: 0.3;
+}
+
+.delivery-slogan:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.delivery-slogan:active {
+  opacity: 0.3;
+}
+
+.delivery-slogan:hover:before {
+  background-color: #FFC700;
 }
 
 .footer-nav-link:focus {
