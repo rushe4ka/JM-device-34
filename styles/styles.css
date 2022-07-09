@@ -1293,38 +1293,6 @@ button {
   opacity: 1;
 }
 
-.subscription-button:focus,
-.catalog-more:focus {
-  outline: 2px solid rgb(175 79 255);
-  outline-offset: 2px;
-}
-
-.catalog-more:hover {
-  border-color: #000000;
-}
-
-.catalog-more:active {
-  border-color: rgb(0 0 0 / 0.3);
-}
-
-.subscription-button:disabled,
-.catalog-more:disabled {
-  border: 3px solid #E5E5E5;
-  opacity: 0.3;
-}
-
-.subscription-button:hover {
-  color: #FFFFFF;
-  background: #000000;
-  border: 3px solid #000000;
-}
-
-.subscription-button:active {
-  background: #000000;
-  border: 3px solid #000000;
-  color: rgb(255 255 255 / 0.3);
-}
-
 .slider-paginator-dot:focus {
   outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
@@ -1396,6 +1364,28 @@ button {
   outline-offset: 2px;
 }
 
+.subscription-button:hover {
+  color: #FFFFFF;
+  background: #000000;
+  border: 3px solid #000000;
+}
+
+.subscription-button:active {
+  background: #000000;
+  border: 3px solid #000000;
+  color: rgb(255 255 255 / 0.3);
+}
+
+.subscription-button:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.subscription-button:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
+}
+
 .sort-up:hover {
   opacity: 0.5;
 }
@@ -1406,6 +1396,24 @@ button {
 
 .sort-up:focus {
   box-shadow: 0 0 0 2px rgb(175 79 255);
+}
+
+.catalog-more:hover {
+  border-color: #000000;
+}
+
+.catalog-more:active {
+  border-color: rgb(0 0 0 / 0.3);
+}
+
+.catalog-more:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.catalog-more:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
 }
 
 .catalog-paginator-link-prev:hover,
