@@ -787,8 +787,7 @@ button {
 }
 
 .subscription-form input::placeholder {
-  color: #000000;
-  opacity: 0.5;
+  color: rgb(0 0 0 / 0.5)
 }
 
 .subscription-button {
@@ -1241,8 +1240,7 @@ button {
 }
 
 .catalog-more:active {
-  border-color: #000000;
-  opacity: 0.3;
+  border-color: rgb(0 0 0 / 0.3);
 }
 
 .subscription-button:disabled,
