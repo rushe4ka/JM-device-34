@@ -1297,7 +1297,7 @@ button {
   outline-offset: 2px;
 }
 
-.category-icon:active {
+.category-item:active .category-icon {
   background: #FFC700;
 }
 
