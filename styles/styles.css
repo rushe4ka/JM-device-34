@@ -886,7 +886,10 @@ button {
 }
 
 .filter {
+  border: none;
+  margin: 0;
   margin-bottom: 35px;
+  padding: 0;
 }
 
 .filter:last-of-type {
@@ -894,6 +897,7 @@ button {
 }
 
 .filter legend {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -903,6 +907,24 @@ button {
 .filter label {
   font-size: 16px;
   line-height: 19px;
+}
+
+.filter-color {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-choice:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.filter-bluetooth {
+  display: flex;
+  flex-direction: column;
+}
+
+.bluetooth-choice:not(:last-child) {
+  margin-bottom: 21px;
 }
 
 .button-filter-show {
