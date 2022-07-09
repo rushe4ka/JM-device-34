@@ -1034,15 +1034,11 @@ button {
 }
 
 .catalog-paginator-list-item:first-child {
-  margin-right: 145px;
-  width: 128px;
-  padding: 25px;
+  margin-right: auto;
 }
 
 .catalog-paginator-list-item:last-child {
-  margin-left: 145px;
-  width: 141px;
-  padding: 25px;
+  margin-left: auto;
 }
 
 .catalog-paginator-link {
@@ -1054,8 +1050,15 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #444444;
-  opacity: 0.3;
+  color: rgb(4 4 4 / 0.3);
+}
+
+.catalog-paginator-link-prev {
+  padding: 25px;
+}
+
+.catalog-paginator-link-next {
+  padding: 25px;
 }
 
 /* Footer */
@@ -1381,6 +1384,35 @@ button {
 .social-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
+}
+
+.catalog-paginator-link-prev:hover,
+.catalog-paginator-link-next:hover {
+  background: #DCDCDC;
+}
+
+.catalog-paginator-link-prev:active,
+.catalog-paginator-link-next:active {
+  color: rgb(0 0 0 / 0.3);
+}
+
+.catalog-paginator-link-prev:focus,
+.catalog-paginator-link-next:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.catalog-paginator-link:hover {
+  color: #444444;
+}
+
+.catalog-paginator-link:active {
+  color: rgb(4 4 4 / 0.1)
+}
+
+.catalog-paginator-link:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: -2px;
 }
 
 .footer-tel:hover {
