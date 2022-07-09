@@ -528,10 +528,7 @@ button {
 .services-slider {
   position: relative;
   margin: 0;
-  padding: 0;
-  padding-top: 64px;
-  padding-bottom: 26px;
-  width: 280px;
+  padding: 64px 120px 26px 0;
   list-style-type: none;
 }
 
@@ -552,11 +549,11 @@ button {
 }
 
 .service-button-active {
-  width: 274px;
-  padding: 10px 0;
-  padding-right: 120px;
   background-color: #000000;
   color: #FFE17F;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 120px 0 0 0 #000000;
 }
 
 .services-list {
@@ -1306,6 +1303,19 @@ button {
 
 .category-item:hover {
   opacity: 0.3;
+}
+
+.service-button-active:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.service-button-active:active {
+  color: rgba(255, 225, 127, 0.3);
+}
+
+.service-button-active:hover {
+  color: rgba(255, 225, 127, 0.5);
 }
 
 .delivery-slogan:focus {
