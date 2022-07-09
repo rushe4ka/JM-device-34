@@ -254,15 +254,15 @@ button {
 
 .basket {
   position: relative;
-  margin-left: 36px;
-  width: 99px;
+  margin-left: 18px;
+  width: 116px;
   text-align: end;
 }
 
 .basket::before {
   position: absolute;
-  left: 0;
-  content: url("../images/icons/cart-icon.svg");
+  left: 15px;
+  content: url(../images/icons/cart-icon.svg);
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
@@ -270,7 +270,7 @@ button {
 
 .basket-counter {
   position: absolute;
-  left: -13px;
+  left: 0;
   top: 4px;
   width: 21px;
   height: 21px;
@@ -1235,6 +1235,24 @@ button {
 .header-search-button:active {
   background-color: #000000;
   color: rgb(255 255 255 / 0.3);
+}
+
+.header-button:hover {
+  opacity: 0.6;
+}
+
+.header-button:active {
+  opacity: 0.3;
+}
+
+.header-button:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: -2px;
+}
+
+.basket:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
 }
 
 .button:hover {
