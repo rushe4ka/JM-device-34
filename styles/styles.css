@@ -268,19 +268,24 @@ button {
   background-repeat: no-repeat;
 }
 
-/*.basket::after {
+.basket-counter {
   position: absolute;
   left: -13px;
   top: 4px;
   width: 21px;
   height: 21px;
-  content: "2";
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 14px;
   line-height: 17px;
+
   border-radius: 50%;
   background: #ffffff no-repeat center;
-}*/
+}
 
 .main-navigation {
   display: flex;
