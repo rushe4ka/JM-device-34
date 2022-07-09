@@ -1180,12 +1180,8 @@ button {
 
 .footer-developer {
   display: block;
-  min-width: 115px;
-  min-height: 33px;
-}
-
-.footer-developer img {
-  display: block;
+  width: 115px;
+  height: 33px;
 }
 
 /* Состояния */
@@ -1307,4 +1303,18 @@ button {
 
 .social-link:hover img{
   opacity: 0.3;
+}
+
+.footer-developer-logo:focus {
+  outline: 1px solid #AF4FFF;
+  outline-offset: 1px;
+}
+
+.footer-developer-logo:active {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
+
+.footer-developer-logo:hover {
+  fill: #FFFFFF;
 }
