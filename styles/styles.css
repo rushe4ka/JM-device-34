@@ -1448,7 +1448,7 @@ button {
   opacity: 0.3;
 }
 
-.footer-developer-logo:focus {
-  outline: 1px solid #AF4FFF;
+.footer-developer:focus {
+  outline: 1px solid rgb(175, 79, 255);
   outline-offset: 1px;
 }
