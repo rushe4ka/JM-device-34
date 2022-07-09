@@ -1384,6 +1384,18 @@ button {
   outline-offset: 2px;
 }
 
+.sort-up:hover {
+  opacity: 0.5;
+}
+
+.sort-up:active {
+  opacity: 1;
+}
+
+.sort-up:focus {
+  box-shadow: 0 0 0 2px rgb(175 79 255 / 1);
+}
+
 .catalog-paginator-link-prev:hover,
 .catalog-paginator-link-next:hover {
   background: #DCDCDC;
