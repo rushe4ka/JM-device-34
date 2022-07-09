@@ -1190,11 +1190,10 @@ button {
 
 /* Состояния */
 
-.header-logo:focus,
-.footer-logo:focus,
-.breadcrumbs-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: 2px;
+.header-logo:hover,
+.footer-logo:hover,
+.breadcrumbs-link:hover {
+  opacity: 0.6;
 }
 
 .header-logo:active,
@@ -1203,15 +1202,15 @@ button {
   opacity: 0.3;
 }
 
-.header-logo:hover,
-.footer-logo:hover,
-.breadcrumbs-link:hover {
-  opacity: 0.6;
+.header-logo:focus,
+.footer-logo:focus,
+.breadcrumbs-link:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
 }
 
-.button:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: -2px;
+.button:hover {
+  background: #FFE17F;
 }
 
 .button:active,
@@ -1219,8 +1218,9 @@ button {
   background: #FFCC33;
 }
 
-.button:hover {
-  background: #FFE17F;
+.button:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: -2px;
 }
 
 .button:disabled {
@@ -1233,13 +1233,13 @@ button {
   outline-offset: 2px;
 }
 
+.catalog-more:hover {
+  border-color: #000000;
+}
+
 .catalog-more:active {
   border-color: #000000;
   opacity: 0.3;
-}
-
-.catalog-more:hover {
-  border-color: #000000;
 }
 
 .subscription-button:disabled,
@@ -1248,16 +1248,16 @@ button {
   opacity: 0.3;
 }
 
-.subscription-button:active {
-  background: #000000;
-  border: 3px solid #000000;
-  color: rgb(0 0 0 / 0.3);
-}
-
 .subscription-button:hover {
   color: #FFFFFF;
   background: #000000;
   border: 3px solid #000000;
+}
+
+.subscription-button:active {
+  background: #000000;
+  border: 3px solid #000000;
+  color: rgb(0 0 0 / 0.3);
 }
 
 .slider-paginator-dot:focus {
@@ -1265,22 +1265,13 @@ button {
   outline-offset: 2px;
 }
 
-.slider-paginator-dot:active,
-.slider-paginator-dot-checked:active {
-  opacity: 0.3;
-}
-
 .slider-paginator-dot:hover,
 .slider-paginator-dot-checked:hover {
   opacity: 0.6;
 }
 
-.button-slide:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: 2px;
-}
-
-.button-slide:active {
+.slider-paginator-dot:active,
+.slider-paginator-dot-checked:active {
   opacity: 0.3;
 }
 
@@ -1288,8 +1279,25 @@ button {
   opacity: 0.6;
 }
 
+.button-slide:active {
+  opacity: 0.3;
+}
+
+.button-slide:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
 .button-slide:disabled {
   opacity: 0.1;
+}
+
+.category-item:hover {
+  opacity: 0.3;
+}
+
+.category-item:active .category-icon {
+  background: #FFC700;
 }
 
 .category-item:focus {
@@ -1297,12 +1305,12 @@ button {
   outline-offset: 2px;
 }
 
-.category-item:active .category-icon {
-  background: #FFC700;
+.service-button-active:hover {
+  color: rgba(255, 225, 127, 0.5);
 }
 
-.category-item:hover {
-  opacity: 0.3;
+.service-button-active:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 .service-button-active:focus {
@@ -1310,12 +1318,12 @@ button {
   outline-offset: 2px;
 }
 
-.service-button-active:active {
-  color: rgba(255, 225, 127, 0.3);
+.delivery-slogan:hover:before {
+  background-color: #FFC700;
 }
 
-.service-button-active:hover {
-  color: rgba(255, 225, 127, 0.5);
+.delivery-slogan:active {
+  opacity: 0.3;
 }
 
 .delivery-slogan:focus {
@@ -1323,17 +1331,18 @@ button {
   outline-offset: 2px;
 }
 
-.delivery-slogan:active {
-  opacity: 0.3;
+.footer-nav-link:hover {
+  color: #FFC700;
 }
 
-.delivery-slogan:hover:before {
+.footer-nav-link:hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
   background-color: #FFC700;
-}
-
-.footer-nav-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: 2px;
 }
 
 .footer-nav-link:active {
@@ -1352,27 +1361,9 @@ button {
   opacity: 0.3;
 }
 
-.footer-nav-link:hover {
-  color: #FFC700;
-}
-
-.footer-nav-link:hover:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: #FFC700;
-}
-
-.social-link:focus {
+.footer-nav-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
-}
-
-.social-link:active {
-  background: #FFC700;
 }
 
 .social-link:hover {
@@ -1383,9 +1374,17 @@ button {
   opacity: 0.3;
 }
 
-.footer-tel:focus {
+.social-link:active {
+  background: #FFC700;
+}
+
+.social-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
+}
+
+.footer-tel:hover {
+  color: #FFC700;
 }
 
 .footer-tel:active {
@@ -1393,13 +1392,13 @@ button {
   opacity: 0.3;
 }
 
-.footer-tel:hover {
-  color: #FFC700;
+.footer-tel:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
 }
 
-.footer-developer-logo:focus {
-  outline: 1px solid #AF4FFF;
-  outline-offset: 1px;
+.footer-developer-logo:hover {
+  fill: #FFFFFF;
 }
 
 .footer-developer-logo:active {
@@ -1407,6 +1406,7 @@ button {
   opacity: 0.3;
 }
 
-.footer-developer-logo:hover {
-  fill: #FFFFFF;
+.footer-developer-logo:focus {
+  outline: 1px solid #AF4FFF;
+  outline-offset: 1px;
 }
