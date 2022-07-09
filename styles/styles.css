@@ -295,18 +295,17 @@ button {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-color: grey;
 }
 
-.navigation-link:nth-child(2) {
+.navigation-item:nth-child(2) {
   margin-left: auto;
 }
 
-.navigation-link {
+.navigation-item {
   margin-left: 50px;
 }
 
-.navigation-link:first-child {
+.navigation-item:first-child {
   margin-left: 0;
 }
 
@@ -314,6 +313,7 @@ button {
   position: relative;
   display: block;
   width: 293px;
+  padding: 15px 0;
 }
 
 .catalog-link::after {
@@ -321,7 +321,7 @@ button {
   z-index: 1;
   content: "";
   right: 0;
-  top: -14px;
+  top: 0;
   width: 50px;
   height: 50px;
   border: 2px solid #000000;
@@ -1197,6 +1197,24 @@ button {
 
 /* Состояния */
 
+.button:hover {
+  background: #FFE17F;
+}
+
+.button:active,
+.button:active::after {
+  background: #FFCC33;
+}
+
+.button:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: -2px;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
+
 .header-logo:hover,
 .footer-logo:hover,
 .breadcrumbs-link:hover {
@@ -1247,7 +1265,7 @@ button {
 
 .header-button:focus {
   outline: 2px solid rgb(175 79 255);
-  outline-offset: -2px;
+  outline-offset: 2px;
 }
 
 .basket:focus {
@@ -1255,22 +1273,24 @@ button {
   outline-offset: 2px;
 }
 
-.button:hover {
-  background: #FFE17F;
+.nav-link:hover {
+  opacity: 0.6;
 }
 
-.button:active,
-.button:active::after {
-  background: #FFCC33;
-}
-
-.button:focus {
-  outline: 2px solid rgb(175 79 255);
-  outline-offset: -2px;
-}
-
-.button:disabled {
+.nav-link:active {
   opacity: 0.3;
+}
+
+.nav-link:focus,
+.catalog-link:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+  z-index: 2;
+}
+
+.catalog-link:hover:after,
+.catalog-link:active:after {
+  opacity: 1;
 }
 
 .subscription-button:focus,
