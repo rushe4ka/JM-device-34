@@ -182,7 +182,7 @@ button {
 }
 
 .header-search input::placeholder {
-  color: #000000;
+  color: rgb(0 0 0 / 0.3);
 }
 
 .header-search-button {
@@ -1211,6 +1211,27 @@ button {
   outline-offset: 2px;
 }
 
+.header-search input:focus,
+.header-search-button:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.header-search input:disabled,
+.header-search-button:disabled {
+  opacity: 0.3;
+}
+
+.header-search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header-search-button:active {
+  background-color: #000000;
+  color: rgb(F F F / 0.3);
+}
+
 .button:hover {
   background: #FFE17F;
 }
@@ -1332,6 +1353,47 @@ button {
   outline-offset: 2px;
 }
 
+.sort-up:hover {
+  opacity: 0.5;
+}
+
+.sort-up:active {
+  opacity: 1;
+}
+
+.sort-up:focus {
+  box-shadow: 0 0 0 2px rgb(175 79 255 / 1);
+}
+
+.catalog-paginator-link-prev:hover,
+.catalog-paginator-link-next:hover {
+  background: #DCDCDC;
+}
+
+.catalog-paginator-link-prev:active,
+.catalog-paginator-link-next:active {
+  color: rgb(0 0 0 / 0.3);
+}
+
+.catalog-paginator-link-prev:focus,
+.catalog-paginator-link-next:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.catalog-paginator-link:hover {
+  color: #444444;
+}
+
+.catalog-paginator-link:active {
+  color: rgb(4 4 4 / 0.1)
+}
+
+.catalog-paginator-link:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: -2px;
+}
+
 .footer-nav-link:hover {
   color: #FFC700;
 }
@@ -1382,47 +1444,6 @@ button {
 .social-link:focus {
   outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
-}
-
-.sort-up:hover {
-  opacity: 0.5;
-}
-
-.sort-up:active {
-  opacity: 1;
-}
-
-.sort-up:focus {
-  box-shadow: 0 0 0 2px rgb(175 79 255 / 1);
-}
-
-.catalog-paginator-link-prev:hover,
-.catalog-paginator-link-next:hover {
-  background: #DCDCDC;
-}
-
-.catalog-paginator-link-prev:active,
-.catalog-paginator-link-next:active {
-  color: rgb(0 0 0 / 0.3);
-}
-
-.catalog-paginator-link-prev:focus,
-.catalog-paginator-link-next:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: 2px;
-}
-
-.catalog-paginator-link:hover {
-  color: #444444;
-}
-
-.catalog-paginator-link:active {
-  color: rgb(4 4 4 / 0.1)
-}
-
-.catalog-paginator-link:focus {
-  outline: 2px solid rgb(175, 79, 255);
-  outline-offset: -2px;
 }
 
 .footer-tel:hover {
