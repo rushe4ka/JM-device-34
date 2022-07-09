@@ -1344,6 +1344,20 @@ button {
   opacity: 0.3;
 }
 
+.footer-tel:focus {
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 2px;
+}
+
+.footer-tel:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
+.footer-tel:hover {
+  color: #FFC700;
+}
+
 .footer-developer-logo:focus {
   outline: 1px solid #AF4FFF;
   outline-offset: 1px;
