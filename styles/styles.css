@@ -100,10 +100,9 @@ button {
   display: block;
   position: relative;
   z-index: 0;
-  outline: 2px solid rgb(185 185 0);
-  outline-offset: -2px;
   padding: 10px 0;
   text-align: center;
+  border: none;
 }
 
 .button::after {
@@ -1310,7 +1309,59 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-image {
+  display: block;
+}
+
+.catalog-image-wrap {
+  position: relative;
   margin-bottom: 32px;
+}
+
+.catalog-image-wrap::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(240 240 240 / 0.8);
+  z-index: -1;
+}
+
+.catalog-item-detailed {
+  position: absolute;
+  width: 220px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.catalog-item:hover .catalog-image-wrap::after,
+.catalog-item:active .catalog-image-wrap::after {
+  z-index: 2;
+}
+
+.catalog-item:hover .catalog-item-detailed,
+.catalog-item:active .catalog-item-detailed {
+  z-index: 3;
+}
+
+.catalog-item:hover .catalog-item-name {
+  opacity: 0.6;
+}
+
+.catalog-item:active .catalog-item-desc {
+  opacity: 0.3;
+}
+
+.catalog-item:active .button::after {
+  background-color: #FFCC33;
+}
+
+.catalog-item:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
 }
 
 .catalog-more {
