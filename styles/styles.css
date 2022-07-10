@@ -1001,8 +1001,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 0;
   padding-left: 16px;
   border: none;
-  box-shadow: [inset] 0 3px 0 3px #C4C4C4;
-  /* border-bottom: 3px solid #C4C4C4; */
+  box-shadow: inset 0 -3px 0 0 #c4c4c4;
   background-color: transparent;
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
@@ -1019,6 +1018,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .subscription-form input:focus {
   background-color: #C4C4C4;
   outline: none;
+}
+
+.subscription-form input:disabled {
+  opacity: 0.3;
 }
 
 .subscription-button {
@@ -1044,7 +1047,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .subscription-button:disabled {
-  border: 3px solid #E5E5E5;
+  border: 3px solid #C4C4C4;
   opacity: 0.3;
 }
 
