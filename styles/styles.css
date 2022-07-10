@@ -416,15 +416,19 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0.3;
 }
 
+.catalog-link:hover:after {
+  opacity: 1;
+}
+
+.catalog-link:active:after {
+  opacity: 1;
+  background-image: url("../images/icons/minus-icon.svg");
+}
+
 .catalog-link:focus {
   outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
   z-index: 2;
-}
-
-.catalog-link:hover:after,
-.catalog-link:active:after {
-  opacity: 1;
 }
 
 .nav-link:hover {
@@ -470,7 +474,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .slides-list {
   position: relative;
-  z-index: 1;
   margin: 0;
   padding: 0;
   list-style-type: none;
