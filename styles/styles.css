@@ -449,8 +449,6 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 49px;
   top: 27px;
   text-align: end;
-  outline: 1px solid rgb(137 206 9);
-  outline-offset: -1px;
 }
 
 .slide-number-text {
