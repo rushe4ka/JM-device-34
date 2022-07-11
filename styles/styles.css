@@ -1191,6 +1191,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-sort {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 25px 40px;
   background-color: #F0F0F0;
 }
@@ -1200,15 +1201,39 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 206px;
 }
 
-.select-control {
+.select-control-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 141px;
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
+  margin-right: auto;
+}
+
+.select-control {
+  width: 100%;
+  padding: 0;
+  padding-right: 30px;
+  font: inherit;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   background-color: transparent;
+  background-image: url("../images/icons/popular-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  appearance: none;
   border: none;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
 }
 
 .select-sort {
