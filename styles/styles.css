@@ -1406,40 +1406,40 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: auto;
 }
 
-.sort-button {
+.sort-up::before {
+  content: "";
   display: block;
   min-width: 30px;
   min-height: 30px;
-  margin: 0;
-  opacity: 0.2;
-}
-
-.sort-up {
   background-image: url("../images/icons/sort-up-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 10px;
+  opacity: 0.2;
 }
 
-.sort-down {
+.sort-down::before {
+  content: "";
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
   background-image: url("../images/icons/sort-down-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 10px;
+  opacity: 0.2;
 }
 
-.sort-up:hover,
-.sort-down:hover {
+.sort-button:hover {
   opacity: 0.5;
 }
 
-.sort-up:active,
-.sort-down:active {
+.sort-up:active:before,
+.sort-down:active:before {
   opacity: 1;
 }
 
-.sort-up:focus,
-.sort-down:focus {
+.sort-button:focus {
   box-shadow: 0 0 0 2px rgb(175 79 255);
 }
 
