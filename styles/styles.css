@@ -1506,6 +1506,14 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: -1;
 }
 
+.catalog-item-detailed:hover {
+  background-color: transparent;
+}
+
+.catalog-item-detailed:hover:after {
+  background-color: #FFCC33;
+}
+
 .catalog-item:hover .catalog-image-wrap::after,
 .catalog-item:active .catalog-image-wrap::after {
   z-index: 2;
