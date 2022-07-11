@@ -1294,7 +1294,7 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 1;
 }
 
-.choice:focus-within .choice-input[type="checkbox"]:checked {
+.choice-input[type="checkbox"]:checked:focus + .choice-mark-checkbox {
   border: 2px solid #000000;
 }
 
