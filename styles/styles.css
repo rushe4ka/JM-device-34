@@ -1250,11 +1250,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .range-toggle:hover {
-  opacity: 0.5;
+  background: #EBEBEB;
+  border: 2px solid rgb(0 0 0 / 0.5);
 }
 
 .range-toggle:active {
   background: #000000;
+  border: 2px solid #000000;
 }
 
 .range-toggle:focus {
