@@ -1234,6 +1234,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font:inherit;
   border: none;
   appearance: textfield;
+  background-color: transparent;
 }
 
 .range-input::-webkit-outer-spin-button,
