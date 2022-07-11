@@ -90,16 +90,44 @@
               </fieldset>
               <fieldset class="filter filter-color">
                 <legend>Цвет</legend>
-                <label class="color-choice"><input type="checkbox" name="white" checked>Белый</label>
-                <label class="color-choice"><input type="checkbox" name="blue">Синий</label>
-                <label class="color-choice"><input type="checkbox" name="red">Красный</label>
-                <label class="color-choice"><input type="checkbox" name="black" checked>Черный</label>
-                <label class="color-choice"><input type="checkbox" name="rose">Розовый</label>
+                <label class="choice">
+                  <input class="visually-hidden choice-input" type="checkbox" name="white" checked>
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Белый</span>
+                </label>
+                <label class="choice">
+                  <input class="visually-hidden choice-input" type="checkbox" name="blue">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Синий</span>
+                </label>
+                <label class="choice">
+                  <input class="visually-hidden choice-input" type="checkbox" name="red">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Красный</span>
+                </label>
+                <label class="choice">
+                  <input class="visually-hidden choice-input" type="checkbox" name="black" checked>
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Черный</span>
+                </label>
+                <label class="choice">
+                  <input class="visually-hidden choice-input" type="checkbox" name="rose">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Розовый</span>
+                </label>
               </fieldset>
               <fieldset class="filter filter-bluetooth">
                 <legend>Bluetooth</legend>
-                <label class="bluetooth-choice"><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
-                <label class="bluetooth-choice"><input type="radio" name="bluetooth" value="no">Нет</label>
+                <label class="choice bluetooth-choice">
+                  <input class="visually-hidden choice-input" type="radio" name="bluetooth" value="yes" checked>
+                  <span class="choice-mark choice-mark-radio"></span>
+                  <span class="choice-label">Есть</span>
+                </label>
+                <label class="choice bluetooth-choice">
+                  <input class="visually-hidden choice-input" type="radio" name="bluetooth" value="no">
+                  <span class="choice-mark choice-mark-radio"></span>
+                  <span class="choice-label">Нет</span>
+                </label>
               </fieldset>
               <button class="button-filter-show button link" type="submit">Показать</button>
             </form>
