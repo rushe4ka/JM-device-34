@@ -449,6 +449,7 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 49px;
   top: 27px;
   text-align: end;
+  z-index: 0;
 }
 
 .slide-number-text {
@@ -480,9 +481,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slide-title {
+  position: relative;
   margin: 0;
   margin-top: 121px;
   margin-bottom: 29px;
+  z-index: 1;
 }
 
 .slide-text {
