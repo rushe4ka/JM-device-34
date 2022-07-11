@@ -1161,6 +1161,87 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 19px;
 }
 
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #F0F0F0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background: #000000;
+}
+
+.range-toggle:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-left: -15px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-filter-label .range-input:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.range-input {
+  width: 69px;
+  padding: 0 4px;
+  font:inherit;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .filter-color {
   display: flex;
   flex-direction: column;
