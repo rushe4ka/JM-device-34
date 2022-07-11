@@ -821,7 +821,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgb(220 220 220 / 0.5);
 }
 
-.delivery-i svg {
+.delivery-i-icon {
   width: 2px;
   height: 12px;
   opacity: 0.3;
@@ -840,7 +840,7 @@ input[type="search"]::-webkit-search-results-decoration {
   outline-offset: 2px;
 }
 
-.delivery-slogan:focus .delivery-i>svg {
+.delivery-slogan:focus .delivery-i-icon {
   opacity: 1;
 }
 
