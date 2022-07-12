@@ -354,23 +354,23 @@
             <div class="data-fields-wrap">
               <div class="data-field data-field-name">
                 <label for="name">Ваше имя:</label>
-                <input class="field" id="name" name="name" type="text" placeholder="Введите имя" required>
+                <input class="field-name field" id="name" name="name" type="text" placeholder="Введите имя" required>
                 <span class="field-hint">Добавьте имя</span>
               </div>
               <div class="data-field data-field-email">
                 <label for="email">Ваш e-mail:</label>
-                <input class="field" id="email" name="email" type="email" placeholder="почта" required>
+                <input class="field-mail field" id="email" name="email" type="email" placeholder="почта" required>
                 <span class="field-hint">Забавный у вас адрес</span>
               </div>
             </div>
             <div class="data-fields-wrap">
               <div class="data-field data-field-text">
                 <label for="text">Что нужно привезти:</label>
-                <input class="field" id="text" name="text" type="text" placeholder="В свободной форме">
+                <input class="field-text field" id="text" name="text" type="text" placeholder="В свободной форме">
               </div>
               <div class="data-field data-field-qty">
                 <span class="data-field-label">
-                  <label for="qty">Количество:</label>
+                  <label class="data-field-label" for="qty">Количество:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                       <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -385,7 +385,7 @@
                   <button class="field-qty-count field-qty-count-minus">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="field-qty" id="qty" name="qty" type="number" value="1" min="1" max="100">
+                  <input class="field-qty" id="qty" name="qty" type="number" value="1" min="1" max="10">
                   <button class="field-qty-count field-qty-count-plus">
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
