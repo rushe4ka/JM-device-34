@@ -129,7 +129,7 @@ button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
-  line-height: 50px;
+  line-height: 51px;
 }
 
 /* Header */
@@ -137,6 +137,7 @@ button {
 .header {
   background-color: #FFE17F;
   margin-top: 40px;
+  padding-bottom: 22px;
 }
 
 .header-container {
@@ -188,7 +189,7 @@ button {
 }
 
 .header-search input {
-  padding: 10px;
+  padding: 8px;
   padding-left: 48px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
@@ -211,7 +212,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
+  padding: 8px 0;
   background-color: transparent;
   border: 2px solid #000000;
   border-left: 0;
@@ -375,7 +376,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .navigation-item {
   position: relative;
-  margin-left: 50px;
+  margin-left: 44px;
 }
 
 .navigation-item:first-child {
@@ -500,6 +501,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .slider {
   position: relative;
+  margin-top: -40px;
   margin-bottom: 70px;
   background-image: linear-gradient(#FFE17F 150px, #ffffff 150px);
 }
@@ -507,9 +509,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .slide-number {
   position: absolute;
   width: 250px;
-  height: 135px;
-  right: 49px;
-  top: 27px;
+  height: 15px;
+  right: 47px;
+  top: 32px;
   text-align: end;
   z-index: 0;
 }
@@ -542,6 +544,11 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 560px;
 }
 
+.slide-desc-wrapper {
+  padding-bottom: 38px;
+}
+
+
 .slide-title {
   position: relative;
   margin: 0;
@@ -571,7 +578,7 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-direction: column;
   align-items: flex-start;
   margin-right: 20px;
-  margin-bottom: 38px;
+  margin-bottom: 0;
 }
 
 .spec-termin {
@@ -681,7 +688,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Category */
 
 .category {
-  margin-bottom: 172px;
+  margin-bottom: 182px;
 }
 
 .category-list {
@@ -730,11 +737,15 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: auto;
 }
 
+.category-monopod img {
+  margin-bottom: 0;
+}
+
 /* Services */
 
 .services {
   background-color: #F0F0F0;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .services-container {
@@ -747,7 +758,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   margin: 0;
   padding: 64px 0 26px 0;
-  width: 280px;
+  width: 289px;
   flex-shrink: 0;
   list-style-type: none;
   border-right: 7px solid #000000;
@@ -794,10 +805,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .service-list-item::after {
   position: absolute;
   content: "";
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: -36px;
   width: 170px;
-  height: 180px;
+  height: 164px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1505,6 +1516,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .sort-button:focus {
   box-shadow: 0 0 0 2px rgb(175 79 255);
+  outline: none;
 }
 
 .catalog-list {
@@ -2221,6 +2233,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #ffffff;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
