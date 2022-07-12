@@ -1394,7 +1394,7 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0.3;
 }
 
-.choice:focus-within {
+.choice:focus-within .choice-mark {
   outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
   opacity: 1;
