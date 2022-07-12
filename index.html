@@ -20,6 +20,43 @@
             <span>Корзина</span>
             <div class="basket-counter">2</div>
           </a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <a class="cart-item-wrap" href="#">
+                    <img src="/images/catalog/catalog-1.jpg" alt="Любительская селфи-палка." width="39" height="43">
+                    <span class="cart-item-title">Любительская селфи&#8209;палка</span>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                      </svg>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-wrap" href="#">
+                    <img src="/images/catalog/catalog-1.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
+                    <span class="cart-item-title">Профессиональная селфи&#8209;палка</span>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                      </svg>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <div class="cart-desc">
+                  <span class="cart-calc">Товаров: 2</span>
+                  <span class="cart-sum">Сумма: 2000 ₽</span>
+                </div>
+                <a class="cart-open" href="#">Открыть корзину</a>
+              </ul>
+            </div>
+          </div>
         </div>
         <nav>
           <ul class="main-navigation">
@@ -353,23 +390,23 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="data-fields-wrap">
               <div class="data-field data-field-name">
-                <label for="name">Ваше имя:</label>
+                <label class="data-field-label" for="name">Ваше имя:</label>
                 <input class="field-name field" id="name" name="name" type="text" placeholder="Введите имя" required>
                 <span class="field-hint">Добавьте имя</span>
               </div>
               <div class="data-field data-field-email">
-                <label for="email">Ваш e-mail:</label>
+                <label class="data-field-label" for="email">Ваш e-mail:</label>
                 <input class="field-mail field" id="email" name="email" type="email" placeholder="почта" required>
                 <span class="field-hint">Забавный у вас адрес</span>
               </div>
             </div>
             <div class="data-fields-wrap">
               <div class="data-field data-field-text">
-                <label for="text">Что нужно привезти:</label>
+                <label class="data-field-label" for="text">Что нужно привезти:</label>
                 <input class="field-text field" id="text" name="text" type="text" placeholder="В свободной форме">
               </div>
               <div class="data-field data-field-qty">
-                <span class="data-field-label">
+                <span class="data-field-label-wrap">
                   <label class="data-field-label" for="qty">Количество:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
