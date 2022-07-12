@@ -874,7 +874,17 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .services {
   background-color: #F0F0F0;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.services::after {
+  height: 30px;
+  background-color: #ffffff;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .services-container {
@@ -886,16 +896,19 @@ input[type="search"]::-webkit-search-results-decoration {
 .services-slider {
   position: relative;
   margin: 0;
-  padding: 64px 0 26px 0;
+  padding: 64px 0;
   width: 289px;
   flex-shrink: 0;
   list-style-type: none;
   border-right: 7px solid #000000;
 }
 
+.services-slider li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .service-button {
   width: 160px;
-  margin-bottom: 35px;
   padding: 10px 0;
   border: none;
   text-align: center;
@@ -1049,7 +1062,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .about-container {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   justify-content: space-between;
 }
 
@@ -1237,9 +1250,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .subscription-button {
   padding: 20px 35px;
-  outline: 3px solid #C4C4C4;
-  outline-offset: -3px;
-  border: none;
+  border: 3px solid #C4C4C4;
 }
 
 .subscription-button:hover {
@@ -1260,7 +1271,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .subscription-button:disabled {
-  border: 3px solid #C4C4C4;
   opacity: 0.3;
 }
 
