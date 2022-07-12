@@ -630,7 +630,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   margin-top: -40px;
   margin-bottom: 70px;
-  background-image: linear-gradient(#FFE17F 150px, #ffffff 150px);
+  background-image: linear-gradient(transparent 0, transparent 20px, #FFE17F 20px, #FFE17F 150px, #ffffff 150px);
 }
 
 .slide-number {
@@ -2335,6 +2335,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  appearance: textfield;
 }
 
 .field-qty::-webkit-outer-spin-button,
@@ -2358,11 +2359,13 @@ input[type="search"]::-webkit-search-results-decoration {
 .field-qty-count-plus {
   right: 2px;
   top: 2px;
+  background-color: #F0F0F0;
 }
 
 .field-qty-count-minus {
   left: 2px;
   top: 2px;
+  background-color: #F0F0F0;
 }
 
 .field-qty-count-minus:after {
@@ -2406,6 +2409,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .tooltip-toggle {
+  position: relative;
   margin: 0;
   width: 26px;
   height: 26px;
