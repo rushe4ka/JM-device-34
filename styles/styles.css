@@ -1541,11 +1541,11 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 1;
 }
 
-.choice-input[type="checkbox"]:checked:focus + .choice-mark-checkbox {
+.choice-input:checked:focus + .choice-mark {
   border: 2px solid #000000;
 }
 
-.choice:disabled + .choice-mark + .choice-label {
+.choice-input:disabled + .choice-mark + .choice-label {
   opacity: 0.1
 }
 
@@ -1559,7 +1559,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 10px;
   height: 10px;
   content: "";
-  background-image: url(../images/icons/checked-icon.svg);
+  background-image: url("../images/icons/checked-icon.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
