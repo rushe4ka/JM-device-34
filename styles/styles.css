@@ -305,7 +305,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .compare {
   position: relative;
-  margin-left: 25px;
+  margin-left: auto;
   width: 105px;
   text-align: end;
 }
