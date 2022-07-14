@@ -168,6 +168,8 @@ button {
 
 .header-useful {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   align-items: center;
   margin-bottom: 30px;
   position: relative;
@@ -273,11 +275,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .button-log-in {
   position: relative;
-  margin-left: 26px;
-  padding: 0;
+  margin-left: 27px;
   padding-left: 26px;
   border: none;
-  text-align: end;
   background-color: transparent;
 }
 
@@ -291,7 +291,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .button-log-out {
-  margin-left: 28px;
+  margin-left: auto;
   padding: 0;
   border: none;
   text-align: end;
@@ -305,7 +305,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .compare {
   position: relative;
-  margin-left: auto;
+  margin-left: 25px;
   width: 105px;
   text-align: end;
 }
@@ -1883,7 +1883,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-paginator-link-next {
-  padding: 22px;
+  padding: 25px;
 }
 
 .catalog-paginator-link-prev:hover,
