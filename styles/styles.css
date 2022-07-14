@@ -1071,9 +1071,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
 .service-title {
+  width: 475px;
   margin: 0;
   margin-bottom: 34px;
-  width: 475px;
 }
 
 .service-text {
