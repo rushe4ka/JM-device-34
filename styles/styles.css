@@ -208,7 +208,8 @@ button {
 
 .header-search::before {
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   content: "";
   width: 16px;
@@ -1072,6 +1073,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .service-title {
   margin: 0;
   margin-bottom: 34px;
+  width: 475px;
 }
 
 .service-text {
@@ -1091,8 +1093,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .delivery-slogan {
   display: block;
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 38px;
+  padding: 40px 80px 38px 140px;
   color: #000000;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
@@ -1916,6 +1917,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-item-name {
   display: block;
   width: 226px;
+  padding-right: 5px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1924,6 +1926,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog-item-price {
   display: block;
+  padding-left: 5px;
   line-height: 21px;
   color: #444444;
 }
@@ -2000,7 +2003,6 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 55px;
   margin: 0 auto;
   margin-bottom: 44px;
-  padding: 0;
   border: 3px solid #E5E5E5;
   background-color: #FFFFFF;
 
