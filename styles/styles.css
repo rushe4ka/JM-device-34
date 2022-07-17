@@ -2008,6 +2008,35 @@ input[type="search"]::-webkit-search-results-decoration {
   outline-offset: 2px;
 }
 
+.new-item {
+  position: relative;
+}
+
+.new-item::before {
+  content: "New";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 27px;
+  right: 27px;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+
+  border: 2px solid rgb(0 0 0 / 0.6);
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .catalog-more {
   display: block;
   width: 760px;
