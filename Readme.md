@@ -1,4 +1,5 @@
 # Личный проект «Девайс»
+https://rushe4ka.github.io/JM-device-34/
 
 * Студент: [Julia Markova](https://up.htmlacademy.ru/htmlcss/34/user/488405).
 * Наставник: `Валентина Видяева`.
